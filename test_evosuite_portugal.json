@@ -16,7 +16,7 @@
       },
       "targets": {
         "org.activiti.engine.impl.persistence.entity.DeploymentEntityManager":[
-          "deleteDeployment(java.lang.String,boolean)"
+          "org.activiti.engine.impl.persistence.entity.DeploymentEntityManager.deleteDeployment(java.lang.String,boolean)void"
         ]
       },
       "scenarioJars": {
@@ -44,7 +44,7 @@
       },
       "targets": {
         "org.activiti.engine.impl.persistence.entity.DeploymentEntityManager":[
-          "deleteDeployment(java.lang.String, boolean)"
+          "org.activiti.engine.impl.persistence.entity.DeploymentEntityManager.deleteDeployment(java.lang.String, boolean)void"
         ]
       },
       "scenarioJars": {
