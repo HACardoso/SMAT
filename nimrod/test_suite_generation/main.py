@@ -11,7 +11,7 @@ class TestSuiteGeneration:
         self._test_suite_generators = test_suite_generators
 
     def generate_test_suites(self, scenario: MergeScenarioUnderAnalysis, input_jar: str, use_determinism: bool) -> List[TestSuite]:
-        f = open("/Users/hugoalvescardoso/Desktop/SMAT/SMAT/nimrod/test_suite_generation/logging_file.txt","a")
+        f = open("nimrod/test_suite_generation/logging_file.txt","a")
         logging.info("Starting tests generation for project %s using jar %s", scenario.project_name, input_jar)
         f.write(f"INFO main - Starting tests generation for project {scenario.project_name} using jar {input_jar} \n")
         test_suites: List[TestSuite] = list()

@@ -25,7 +25,7 @@ class TestSuiteGenerator(ABC):
         self._java = java
 
     def generate_and_compile_test_suite(self, scenario: MergeScenarioUnderAnalysis, input_jar: str, use_determinism: bool) -> TestSuite:
-        f = open("/Users/hugoalvescardoso/Desktop/SMAT/SMAT/nimrod/test_suite_generation/logging_file.txt","a")
+        f = open("nimrod/test_suite_generation/logging_file.txt","a")
         if use_determinism:
             logging.debug('Using deterministic test suite generation')
             

@@ -75,7 +75,7 @@ class Java:
 
     @staticmethod
     def _exec(program, cwd, env, timeout, *args):
-        f = open("/Users/hugoalvescardoso/Desktop/SMAT/SMAT/nimrod/test_suite_generation/logging_file.txt","a")
+        f = open("nimrod/test_suite_generation/logging_file.txt","a")
         try:
             #if len(list(args)) > 5:
             #    command = list(args)

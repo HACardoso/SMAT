@@ -124,7 +124,7 @@ class JUnit:
 
     @staticmethod
     def _extract_test_id(output):
-        f = open("/Users/hugoalvescardoso/Desktop/SMAT/SMAT/nimrod/test_suite_generation/logging_file.txt","a")
+        f = open("nimrod/test_suite_generation/logging_file.txt","a")
         tests_fail = set()
         tests_not_executed = set()
         tests_fail_with_files = set()
