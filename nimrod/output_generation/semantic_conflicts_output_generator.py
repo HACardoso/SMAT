@@ -2,7 +2,7 @@ from typing import Dict, List, TypedDict
 from nimrod.output_generation.output_generator import OutputGenerator, OutputGeneratorContext
 from nimrod.test_suites_execution.main import TestSuitesExecution
 from os import path
-from bs4 import BeautifulSoup
+#from bs4 import *
 
 
 class SemanticConflictsOutput(TypedDict):
@@ -71,16 +71,18 @@ class SemanticConflictsOutputGenerator(OutputGenerator[List[SemanticConflictsOut
         class_report_path = path.join(
             coverage_report_root, package_name, f"{class_name}.html")
 
-        method_name = method_signature[:method_signature.index("(") + 1]
+        
+        #method_name = method_signature[:method_signature.index("(") + 1]
+        #Error handling
+        method_name = method_signature
 
         report_file = open(class_report_path)
-        decoded_report = BeautifulSoup(report_file, 'html.parser')
-        method_report_rows = decoded_report.select("#coveragetable > tbody > tr")
-
-        # We itereate in each method row
-        for method_row in method_report_rows:
-            if method_row.get_text().find(method_name) != -1:
-                if method_row.select_one('td:nth-last-child(2)').get_text() == '0':
-                    return True
+        #decoded_report = BeautifulSoup(report_file, 'html.parser')
+        #method_report_rows = decoded_report.select("#coveragetable > tbody > tr")
+        ##We itereate in each method row
+        #for method_row in method_report_rows:
+        #    if method_row.get_text().find(method_name) != -1:
+        #        if method_row.select_one('td:nth-last-child(2)').get_text() == '0':
+        #            return True
 
         return False

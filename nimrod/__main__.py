@@ -15,6 +15,7 @@ from nimrod.tests.utils import setup_logging, get_config
 from nimrod.test_suite_generation.generators.test_suite_generator import TestSuiteGenerator
 from nimrod.test_suite_generation.generators.randoop_test_suite_generator import RandoopTestSuiteGenerator
 from nimrod.test_suite_generation.generators.evosuite_differential_test_suite_generator import EvosuiteDifferentialTestSuiteGenerator
+from nimrod.test_suite_generation.generators.evosuite_portugal_test_suite_generator import EvosuitePortugalTestSuiteGenerator
 from nimrod.test_suite_generation.generators.evosuite_test_suite_generator import EvosuiteTestSuiteGenerator
 from nimrod.test_suite_generation.generators.project_test_suite_generator import ProjectTestSuiteGenerator
 from nimrod.test_suites_execution.main import TestSuitesExecution, TestSuiteExecutor
@@ -26,9 +27,8 @@ from nimrod.input_parsing.input_parser import CsvInputParser, JsonInputParser
 
 def get_test_suite_generators(config: Dict[str, str]) -> List[TestSuiteGenerator]:
   config_generators = config.get(
-      'test_suite_generators', ['randoop', 'randoop-modified', 'evosuite', 'evosuite-differential', 'project'])
+      'test_suite_generators', ['randoop', 'randoop-modified', 'evosuite', 'evosuite-differential', 'project','evosuite-portugal'])
   generators: List[TestSuiteGenerator] = list()
-
   if 'randoop' in config_generators:
     generators.append(RandoopTestSuiteGenerator(Java(), RANDOOP, "RANDOOP"))
   if 'randoop-modified' in config_generators:
@@ -40,7 +40,8 @@ def get_test_suite_generators(config: Dict[str, str]) -> List[TestSuiteGenerator
     generators.append(EvosuiteDifferentialTestSuiteGenerator(Java()))
   if 'project' in config_generators:
     generators.append(ProjectTestSuiteGenerator(Java()))
-
+  if 'evosuite-portugal' in config_generators:
+    generators.append(EvosuitePortugalTestSuiteGenerator(Java()))
   return generators
 
 
@@ -48,7 +49,6 @@ def get_output_generators(config: Dict[str, str]) -> List[OutputGenerator]:
   config_generators = config.get(
       'output_generators', ['behavior_changes', 'semantic_conflicts', 'test_suites'])
   generators: List[OutputGenerator] = list()
-
   if 'behavior_changes' in config_generators:
     generators.append(BehaviorChangeOutputGenerator())
   if 'semantic_conflicts' in config_generators:

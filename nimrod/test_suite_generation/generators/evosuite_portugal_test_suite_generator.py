@@ -5,45 +5,49 @@ from nimrod.core.merge_scenario_under_analysis import MergeScenarioUnderAnalysis
 
 from nimrod.test_suite_generation.generators.test_suite_generator import \
     TestSuiteGenerator
-from nimrod.tests.utils import get_config
 from nimrod.tools.bin import EVOSUITE, EVOSUITE_RUNTIME
+from nimrod.tests.utils import get_config
+from nimrod.tools.bin import EVOSUITE_PORTUGAL
 
 
-class EvosuiteTestSuiteGenerator(TestSuiteGenerator):
+class EvosuitePortugalTestSuiteGenerator(TestSuiteGenerator):
     def get_generator_tool_name(self) -> str:
-        return "EVOSUITE"
+        return "EVOSUITE_PORTUGAL"
 
     def _execute_tool_for_tests_generation(self, input_jar: str, output_path: str, scenario: MergeScenarioUnderAnalysis, use_determinism: bool) -> None:
-
-        
-        
         for class_name, methods in scenario.targets.items():
           logging.debug(f"Starting generation for class {class_name}")
           params = [
-              '-jar', EVOSUITE,
-              '-projectCP', input_jar,
-              '-class', class_name,
-              '-Dassertion_strategy=all',
-              '-Dp_reflection_on_private=0',
-              '-Dreflection_start_percent=0',
-              '-Dp_functional_mocking=0',
-              '-Dfunctional_mocking_percent=0',
-              '-Dminimize=false',
-              '-Djunit_check=false',
-              '-Dinline=false',
+            '-jar', f'{EVOSUITE_PORTUGAL}' ,
+            f'-projectCP="{scenario.scenario_jars.merge}:{EVOSUITE_PORTUGAL}"' ,
+            f'-class="{class_name}"' ,
+            f'-Dregressioncp="{scenario.scenario_jars.left}:{EVOSUITE_PORTUGAL}"' ,
+            f'-Dsecond_regressioncp="{scenario.scenario_jars.right}:{EVOSUITE_PORTUGAL}"',
+            '-criterion=METHODCALL',
+            #-criterion=LINE:BRANCH:EXCEPTION:WEAKMUTATION:OUTPUT:METHOD:METHODNOEXCEPTION:CBRANCH:METHODCALL
+            '-Dtest_factory=MULTI_TEST',
+            '-Dassertion_strategy=SPECIFIC',
+            '-Ddistance_threshold=0.05',
+            '-Dsandbox=false',
+            '-Djunit_check=false',
+            '-Dminimize=false',
+            '-Dinline=false',
           ]
+
+          
           
           if use_determinism:
             params += ["-Dstopping_condition=MaxTests",
                        f"-seed={self.SEED}", f'-Dsearch_budget={self.DETERMINISTIC_TESTS_QUANTITY}']
           else:
             params += [f'-Dsearch_budget={self.SEARCH_TIME_AVAILABLE}']
-
+#
           if(len(methods) > 0):
             params.append(
-                f'-Dtarget_method_list="{self._create_method_list(methods)}"')
+                f'-Dcover_methods="{self._create_method_list(methods)}"')
 
           self._java.exec_java(output_path, self._java.get_env(), 3000, *tuple(params))
+
 
     def _get_test_suite_class_paths(self, path: str) -> List[str]:
         paths = []
@@ -70,7 +74,7 @@ class EvosuiteTestSuiteGenerator(TestSuiteGenerator):
 
     # Evosuite needs to add its own Runtime in order to compile test suite
     def _compile_test_suite(self, input_jar: str, output_path: str, extra_class_path: List[str] = []) -> str:
-        return super()._compile_test_suite(input_jar, output_path, [EVOSUITE] + extra_class_path)
+        return super()._compile_test_suite(input_jar, output_path, [EVOSUITE_PORTUGAL] + extra_class_path)
 
 
     def _create_method_list(self, methods: "List[str]"):

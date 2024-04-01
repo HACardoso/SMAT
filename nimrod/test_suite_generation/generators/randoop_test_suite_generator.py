@@ -29,7 +29,7 @@ class RandoopTestSuiteGenerator(TestSuiteGenerator):
             f'--classlist={self._generate_target_classes_file(output_path, scenario.targets)}',
             f'--methodlist={self._generate_target_methods_file(output_path, scenario.targets)}'
         ]
-
+        print(params)
         if use_determinism:
             params += [f"--randomseed={self.SEED}",
                        "--deterministic", "--time-limit=0", f'--generated-limit={self.DETERMINISTIC_TESTS_QUANTITY}']

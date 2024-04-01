@@ -32,6 +32,7 @@ class SMAT:
       ))
   
   def _generate_test_suites_for_scenario(self, scenario: MergeScenarioUnderAnalysis) -> List[TestSuite]:
+      
       use_determinism = bool(get_config().get('generate_deterministic_test_suites', False))
       suites_left = self._test_suite_generation.generate_test_suites(scenario, scenario.scenario_jars.left, use_determinism)
       suites_right = self._test_suite_generation.generate_test_suites(scenario, scenario.scenario_jars.right, use_determinism)

@@ -4,8 +4,11 @@
 
   "repo_dir": "",
   "projects_folder": "",
-  "input_path": "",
+  "input_path": "test4.json",
   "tests_dst": "",
   "path_output_csv": "",
-  "logger_level": "DEBUG"
+  "logger_level": "DEBUG",
+
+  "test_suite_generators":["evosuite-portugal"],
+  "test_suite_generation_search_time_available":"300"
 }
