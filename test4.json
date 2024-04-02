@@ -1,4 +1,5 @@
 [
+
   {
     "projectName": "Activiti",
     "runAnalysis": true,
@@ -3706,5 +3707,5 @@
     },
     "jarType": "transformed"
   }
-  
+ 
 ]
