@@ -24,7 +24,7 @@ class TestSuiteGenerator(ABC):
     def __init__(self, java: Java) -> None:
         self._java = java
 
-    def generate_and_compile_test_suite(self, scenario: MergeScenarioUnderAnalysis, input_jar: str, use_determinism: bool) -> TestSuite:
+    def generate_and_compile_test_suite(self, scenario: MergeScenarioUnderAnalysis, input_jar: str, use_determinism: bool, seed: int) -> TestSuite:
         f = open("nimrod/test_suite_generation/logging_file.txt","a")
         if use_determinism:
             logging.debug('Using deterministic test suite generation')
@@ -37,7 +37,7 @@ class TestSuiteGenerator(ABC):
 
         logging.info(f"Starting generation with {self.get_generator_tool_name()}")
         f.write("INFO test_suite_generator - Starting generation with "+str(self.get_generator_tool_name())+"\n")
-        self._execute_tool_for_tests_generation(input_jar, test_suite_path, scenario, use_determinism)
+        self._execute_tool_for_tests_generation(input_jar, test_suite_path, scenario, use_determinism, seed)
         logging.info(f"Finished generation with {self.get_generator_tool_name()}")
         f.write("INFO test_suite_generator - Finished generation with "+str(self.get_generator_tool_name())+"\n")
 
@@ -59,7 +59,7 @@ class TestSuiteGenerator(ABC):
         pass
 
     @abstractmethod
-    def _execute_tool_for_tests_generation(self, input_jar: str, test_suite_path: str, scenario: MergeScenarioUnderAnalysis, use_determinism: bool) -> None:
+    def _execute_tool_for_tests_generation(self, input_jar: str, test_suite_path: str, scenario: MergeScenarioUnderAnalysis, use_determinism: bool, seed: int) -> None:
         pass
 
     @abstractmethod

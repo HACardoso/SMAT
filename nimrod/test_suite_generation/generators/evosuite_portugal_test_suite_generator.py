@@ -14,7 +14,7 @@ class EvosuitePortugalTestSuiteGenerator(TestSuiteGenerator):
     def get_generator_tool_name(self) -> str:
         return "EVOSUITE_PORTUGAL"
 
-    def _execute_tool_for_tests_generation(self, input_jar: str, output_path: str, scenario: MergeScenarioUnderAnalysis, use_determinism: bool) -> None:
+    def _execute_tool_for_tests_generation(self, input_jar: str, output_path: str, scenario: MergeScenarioUnderAnalysis, use_determinism: bool, seed: int) -> None:
         for class_name, methods in scenario.targets.items():
           logging.debug(f"Starting generation for class {class_name}")
           params = [
@@ -32,6 +32,7 @@ class EvosuitePortugalTestSuiteGenerator(TestSuiteGenerator):
             '-Djunit_check=false',
             '-Dminimize=false',
             '-Dinline=false',
+            f'-seed={seed}',
           ]
 
           
