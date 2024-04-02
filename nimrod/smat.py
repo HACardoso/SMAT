@@ -34,19 +34,9 @@ class SMAT:
   def _generate_test_suites_for_scenario(self, scenario: MergeScenarioUnderAnalysis) -> List[TestSuite]:
       
       use_determinism = bool(get_config().get('generate_deterministic_test_suites', False))
-      suites_3 = self._test_suite_generation.generate_test_suites(scenario, scenario.scenario_jars.left, use_determinism, 3)
-      suites_30 = self._test_suite_generation.generate_test_suites(scenario, scenario.scenario_jars.right, use_determinism, 30)
-      suites_33 = self._test_suite_generation.generate_test_suites(scenario, scenario.scenario_jars.right, use_determinism, 33)
-      suites_300 = self._test_suite_generation.generate_test_suites(scenario, scenario.scenario_jars.right, use_determinism, 300)
-      suites_303 = self._test_suite_generation.generate_test_suites(scenario, scenario.scenario_jars.right, use_determinism, 303)
-      suites_333 = self._test_suite_generation.generate_test_suites(scenario, scenario.scenario_jars.right, use_determinism, 333)
-      suites_3000 = self._test_suite_generation.generate_test_suites(scenario, scenario.scenario_jars.right, use_determinism, 3000)
-      suites_3003 = self._test_suite_generation.generate_test_suites(scenario, scenario.scenario_jars.right, use_determinism, 3003)
-      suites_3030 = self._test_suite_generation.generate_test_suites(scenario, scenario.scenario_jars.right, use_determinism, 3030)
-      suites_3033 = self._test_suite_generation.generate_test_suites(scenario, scenario.scenario_jars.right, use_determinism, 3033)
-      suites_3300 = self._test_suite_generation.generate_test_suites(scenario, scenario.scenario_jars.right, use_determinism, 3300)
-      suites_3303 = self._test_suite_generation.generate_test_suites(scenario, scenario.scenario_jars.right, use_determinism, 3303)
-      suites_3330 = self._test_suite_generation.generate_test_suites(scenario, scenario.scenario_jars.right, use_determinism, 3330)
-      suites_3333 = self._test_suite_generation.generate_test_suites(scenario, scenario.scenario_jars.right, use_determinism, 3333)
+      lst = []
 
-      return suites_3 + suites_30 + suites_33 + suites_300 + suites_303 + suites_333 + suites_3000 + suites_3003 + suites_3030 + suites_3033 + suites_3300 + suites_3303 + suites_3330 + suites_3333
+      for i in range(len(30)):
+        lst.append(self._test_suite_generation.generate_test_suites(scenario, scenario.scenario_jars.right, use_determinism,i*3))
+
+      return lst
