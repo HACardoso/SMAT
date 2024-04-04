@@ -131,7 +131,7 @@
     },
     "targets": {
       "org.antlr.v4.codegen.target.Python2Target":[
-        "org.antlr.v4.codegen.target.Python2Target.python2Keywords"
+        "org.antlr.v4.codegen.target.Python2Target.addBadWords()void"
       ]
     },
     "scenarioJars": {
@@ -160,7 +160,7 @@
     },
     "targets": {
       "org.antlr.v4.codegen.target.Python2Target":[
-        "org.antlr.v4.codegen.target.Python2Target.python2Keywords"
+        "org.antlr.v4.codegen.target.Python2Target.addBadWords()void"
       ]
     },
     "scenarioJars": {
@@ -189,7 +189,7 @@
     },
     "targets": {
       "org.antlr.v4.codegen.target.Python3Target":[
-        "org.antlr.v4.codegen.target.Python3Target.python3Keywords"
+        "org.antlr.v4.codegen.target.Python3Target.addBadWords()void"
       ]
     },
     "scenarioJars": {
@@ -218,7 +218,7 @@
     },
     "targets": {
       "org.antlr.v4.codegen.target.Python3Target":[
-        "org.antlr.v4.codegen.target.Python3Target.python3Keywords"
+        "org.antlr.v4.codegen.target.Python3Target.addBadWords()void"
       ]
     },
     "scenarioJars": {
@@ -247,8 +247,7 @@
     },
     "targets": {
       "org.atmosphere.cpr.AtmosphereConfig":[
-        "org.atmosphere.cpr.AtmosphereConfig.AtmosphereConfig(AtmosphereFramework)",
-        "org.atmosphere.cpr.AtmosphereConfig.constructor()"
+        "org.atmosphere.cpr.AtmosphereConfig.AtmosphereConfig(AtmosphereFramework)"
       ]
     },
     "scenarioJars": {
@@ -277,8 +276,7 @@
     },
     "targets": {
       "org.atmosphere.cpr.AtmosphereConfig":[
-        "org.atmosphere.cpr.AtmosphereConfig.AtmosphereConfig(AtmosphereFramework)",
-        "org.atmosphere.cpr.AtmosphereConfig.constructor()"
+        "org.atmosphere.cpr.AtmosphereConfig.AtmosphereConfig(AtmosphereFramework)"
       ]
     },
     "scenarioJars": {
@@ -365,7 +363,7 @@
     },
     "targets": {
       "io.cloudslang.lang.api.SlangImplTest":[
-        "io.cloudslang.lang.api.SlangImplTest.ALL_EVENTS_SIZE"
+        "io.cloudslang.lang.api.SlangImplTest.testSubscribeOnAllEventsWithListener()void"
       ]
     },
     "scenarioJars": {
@@ -394,7 +392,7 @@
     },
     "targets": {
       "io.cloudslang.lang.api.SlangImplTest":[
-        "io.cloudslang.lang.api.SlangImplTest.ALL_EVENTS_SIZE"
+        "io.cloudslang.lang.api.SlangImplTest.testSubscribeOnAllEventsWithListener()void"
       ]
     },
     "scenarioJars": {
@@ -771,7 +769,7 @@
     },
     "targets": {
       "org.elasticsearch.action.DocWriteResponse":[
-        "org.elasticsearch.action.DocWriteResponse.toXContent(org.elasticsearch.common.xcontent.XContentBuilder,Params)org.elasticsearch.common.xcontent.XContentBuilder"
+        "org.elasticsearch.action.DocWriteResponse.toXContent(org.elasticsearch.common.xcontent.XContentBuilder;Params)org.elasticsearch.common.xcontent.XContentBuilder"
       ]
     },
     "scenarioJars": {
@@ -800,7 +798,7 @@
     },
     "targets": {
       "org.elasticsearch.action.DocWriteResponse":[
-        "org.elasticsearch.action.DocWriteResponse.toXContent(org.elasticsearch.common.xcontent.XContentBuilder,Params)org.elasticsearch.common.xcontent.XContentBuilder"
+        "org.elasticsearch.action.DocWriteResponse.toXContent(org.elasticsearch.common.xcontent.XContentBuilder;Params)org.elasticsearch.common.xcontent.XContentBuilder"
       ]
     },
     "scenarioJars": {
@@ -1235,7 +1233,8 @@
     },
     "targets": {
       "com.netflix.appinfo.ApplicationInfoManager":[
-        "constructor()"
+        "com.netflix.appinfo.ApplicationInfoManager.ApplicationInfoManager()",
+        "com.netflix.appinfo.ApplicationInfoManager.(EurekaInstanceConfig, com.netflix.appinfo.InstanceInfo)"
       ]
     },
     "scenarioJars": {
@@ -1264,7 +1263,8 @@
     },
     "targets": {
       "com.netflix.appinfo.ApplicationInfoManager":[
-        "constructor()"
+        "com.netflix.appinfo.ApplicationInfoManager.ApplicationInfoManager()",
+        "com.netflix.appinfo.ApplicationInfoManager.(EurekaInstanceConfig, com.netflix.appinfo.InstanceInfo)"
       ]
     },
     "scenarioJars": {
@@ -1293,7 +1293,7 @@
     },
     "targets": {
       "fitnesse.testsystems.slim.tables.SlimTableFactory":[
-        "contructor()"
+        "fitnesse.testsystems.slim.tables.SlimTableFactory.SlimTableFactory()"
       ]
     },
     "scenarioJars": {
@@ -1322,7 +1322,7 @@
     },
     "targets": {
       "fitnesse.testsystems.slim.tables.SlimTableFactory":[
-        "contructor()"
+        "fitnesse.testsystems.slim.tables.SlimTableFactory.SlimTableFactory()"
       ]
     },
     "scenarioJars": {
@@ -1351,7 +1351,7 @@
     },
     "targets": {
       "fitnesse.testsystems.slim.tables.SlimTableFactoryTest":[
-        "setUp()"
+        "fitnesse.testsystems.slim.tables.SlimTableFactoryTest.setUp()void"
       ]
     },
     "scenarioJars": {
@@ -1362,6 +1362,35 @@
     
     },
     "jarType": "original"
+  },
+  {
+    "projectName": "fitnesse",
+    "runAnalysis": true,
+    "scenarioCommits": {
+      "base": "87a4b54f94f7dbe48bdfde0dae874e36d48f43df",
+      "left": "d24741cd3",
+      "right": "6c383370e",
+      "merge": "4d9ba9d221d879507440feb084fa7521b95111ec"
+    },
+    "scenarioJavaFiles":{
+      "base": "/Users/hugoalvescardoso/Desktop/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/source/fitnesse/testsystems/slim/tables/SlimTableFactoryTest/base.java",
+      "left": "/Users/hugoalvescardoso/Desktop/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/source/fitnesse/testsystems/slim/tables/SlimTableFactoryTest/left.java",
+      "right": "/Users/hugoalvescardoso/Desktop/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/source/fitnesse/testsystems/slim/tables/SlimTableFactoryTest/right.java",
+      "merge": "/Users/hugoalvescardoso/Desktop/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/source/fitnesse/testsystems/slim/tables/SlimTableFactoryTest/merge.java"
+    },
+    "targets": {
+      "fitnesse.testsystems.slim.tables.SlimTableFactoryTest":[
+        "fitnesse.testsystems.slim.tables.SlimTableFactoryTest.setUp()void"
+      ]
+    },
+    "scenarioJars": {
+      "base": "/Users/hugoalvescardoso/Desktop/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/transformed/base/fitnesse.jar",
+      "left": "/Users/hugoalvescardoso/Desktop/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/transformed/left/fitnesse.jar",
+      "right": "/Users/hugoalvescardoso/Desktop/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/transformed/right/fitnesse.jar",
+      "merge": "/Users/hugoalvescardoso/Desktop/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/transformed/merge/fitnesse-standalone.jar:/Users/hugoalvescardoso/Desktop/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/transformed/merge/fitnesse.jar"
+    
+    },
+    "jarType": "transformed"
   },
   {
     "projectName": "hector",
@@ -1380,7 +1409,7 @@
     },
     "targets": {
       "me.prettyprint.cassandra.connection.HConnectionManager":[
-        "operateWithFailover(me.prettyprint.cassandra.service.Operation<?>)"
+        "me.prettyprint.cassandra.connection.HConnectionManager.operateWithFailover(me.prettyprint.cassandra.service.Operation<?>)"
       ]
     },
     "scenarioJars": {
@@ -1409,7 +1438,7 @@
     },
     "targets": {
       "me.prettyprint.cassandra.connection.HConnectionManager":[
-        "operateWithFailover(me.prettyprint.cassandra.service.Operation<?>)"
+        "me.prettyprint.cassandra.connection.HConnectionManager.operateWithFailover(me.prettyprint.cassandra.service.Operation<?>)"
       ]
     },
     "scenarioJars": {
@@ -1438,7 +1467,7 @@
     },
     "targets": {
       "me.prettyprint.cassandra.connection.client.HSaslThriftClient":[
-        "open()"
+        "me.prettyprint.cassandra.connection.client.HSaslThriftClient.open()me.prettyprint.cassandra.connection.client.HSaslThriftClient"
       ]
     },
     "scenarioJars": {
@@ -1467,7 +1496,7 @@
     },
     "targets": {
       "me.prettyprint.cassandra.connection.client.HSaslThriftClient":[
-        "open()"
+        "me.prettyprint.cassandra.connection.client.HSaslThriftClient.open()me.prettyprint.cassandra.connection.client.HSaslThriftClient"
       ]
     },
     "scenarioJars": {
@@ -1496,7 +1525,7 @@
     },
     "targets": {
       "me.prettyprint.cassandra.connection.client.HKerberosThriftClient":[
-        "open()"
+        "me.prettyprint.cassandra.connection.client.HKerberosThriftClient.open()me.prettyprint.cassandra.connection.client.HKerberosThriftClient"
       ]
     },
     "scenarioJars": {
@@ -1525,7 +1554,7 @@
     },
     "targets": {
       "me.prettyprint.cassandra.connection.client.HKerberosThriftClient":[
-        "open()"
+        "me.prettyprint.cassandra.connection.client.HKerberosThriftClient.open()me.prettyprint.cassandra.connection.client.HKerberosThriftClient"
       ]
     },
     "scenarioJars": {
@@ -1554,7 +1583,7 @@
     },
     "targets": {
       "me.prettyprint.cassandra.connection.client.HThriftClient":[
-        "open()"
+        "me.prettyprint.cassandra.connection.client.HThriftClient.open()me.prettyprint.cassandra.connection.client.HThriftClient"
       ]
     },
     "scenarioJars": {
@@ -1583,7 +1612,7 @@
     },
     "targets": {
       "me.prettyprint.cassandra.connection.client.HThriftClient":[
-        "open()"
+        "me.prettyprint.cassandra.connection.client.HThriftClient.open()me.prettyprint.cassandra.connection.client.HThriftClient"
       ]
     },
     "scenarioJars": {
@@ -1612,7 +1641,7 @@
     },
     "targets": {
       "com.zaxxer.hikari.HikariConfig":[
-        "validate()"
+        "com.zaxxer.hikari.HikariConfig.validate()void"
       ]
     },
     "scenarioJars": {
@@ -1641,7 +1670,7 @@
     },
     "targets": {
       "com.zaxxer.hikari.HikariConfig":[
-        "validate()"
+        "com.zaxxer.hikari.HikariConfig.validate()void"
       ]
     },
     "scenarioJars": {
@@ -1670,7 +1699,7 @@
     },
     "targets": {
       "com.github.javafaker.Faker":[
-        "Faker(java.util.Locale| java.util.Random)"
+        "com.github.javafaker.Faker.Faker(java.util.Locale; java.util.Random)"
       ]
     },
     "scenarioJars": {
@@ -1699,7 +1728,7 @@
     },
     "targets": {
       "com.github.javafaker.Faker":[
-        "Faker(java.util.Locale| java.util.Random)"
+        "com.github.javafaker.Faker.Faker(java.util.Locale; java.util.Random)"
       ]
     },
     "scenarioJars": {
@@ -1728,7 +1757,7 @@
     },
     "targets": {
       "org.jooq.impl.DSL":[
-        "countDistinct(org.jooq.Field<?>)"
+        "org.jooq.impl.DSL.countDistinct(org.jooq.Field<?>)org.jooq.AggregateFunction<Integer>"
       ]
     },
     "scenarioJars": {
@@ -1757,7 +1786,7 @@
     },
     "targets": {
       "org.jooq.impl.DSL":[
-        "countDistinct(org.jooq.Field<?>)"
+        "org.jooq.impl.DSL.countDistinct(org.jooq.Field<?>)org.jooq.AggregateFunction<Integer>"
       ]
     },
     "scenarioJars": {
@@ -1786,7 +1815,7 @@
     },
     "targets": {
       "org.jsoup.helper.HttpConnection":[
-        "execute(org.jsoup.Connection.Request| org.jsoup.Connection.Response)"
+        "org.jsoup.helper.HttpConnection.execute(org.jsoup.Connection.Request; org.jsoup.helper.HttpConnection.Response)org.jsoup.helper.HttpConnection.Response"
       ]
     },
     "scenarioJars": {
@@ -1815,7 +1844,7 @@
     },
     "targets": {
       "org.jsoup.helper.HttpConnection":[
-        "execute(org.jsoup.Connection.Request| org.jsoup.Connection.Response)"
+        "org.jsoup.helper.HttpConnection.execute(org.jsoup.Connection.Request; org.jsoup.helper.HttpConnection.Response)org.jsoup.helper.HttpConnection.Response"
       ]
     },
     "scenarioJars": {
@@ -1844,7 +1873,7 @@
     },
     "targets": {
       "org.jsoup.helper.HttpConnection":[
-        "execute(org.jsoup.Connection.Request| org.jsoup.Connection.Response)"
+        "org.jsoup.helper.HttpConnection.execute(org.jsoup.Connection.Request; org.jsoup.helper.HttpConnection.Response)org.jsoup.helper.HttpConnection.Response"
       ]
     },
     "scenarioJars": {
@@ -1873,7 +1902,7 @@
     },
     "targets": {
       "org.jsoup.helper.HttpConnection":[
-        "execute(org.jsoup.Connection.Request| org.jsoup.Connection.Response)"
+        "org.jsoup.helper.HttpConnection.execute(org.jsoup.Connection.Request; org.jsoup.helper.HttpConnection.Response)org.jsoup.helper.HttpConnection.Response"
       ]
     },
     "scenarioJars": {
@@ -1902,7 +1931,7 @@
     },
     "targets": {
       "org.jsoup.nodes.TextNode":[
-        "outerHtmlHead(java.lang.StringBuilder| int| Document.OutputSettings)"
+        "org.jsoup.nodes.TextNode.outerHtmlHead(java.lang.StringBuilder; int; Document.OutputSettings)void"
       ]
     },
     "scenarioJars": {
@@ -1931,7 +1960,7 @@
     },
     "targets": {
       "org.jsoup.nodes.TextNode":[
-        "outerHtmlHead(java.lang.StringBuilder| int| Document.OutputSettings)"
+        "org.jsoup.nodes.TextNode.outerHtmlHead(java.lang.StringBuilder; int; Document.OutputSettings)void"
       ]
     },
     "scenarioJars": {
@@ -1960,7 +1989,7 @@
     },
     "targets": {
       "org.jsoup.helper.HttpConnection":[
-        "createConnection(org.jsoup.Connection.Request)"
+        "org.jsoup.helper.HttpConnection.createConnection(org.jsoup.Connection.Request)java.net.HttpURLConnection"
       ]
     },
     "scenarioJars": {
@@ -1989,7 +2018,7 @@
     },
     "targets": {
       "org.jsoup.helper.HttpConnection":[
-        "createConnection(org.jsoup.Connection.Request)"
+        "org.jsoup.helper.HttpConnection.createConnection(org.jsoup.Connection.Request)java.net.HttpURLConnection"
       ]
     },
     "scenarioJars": {
@@ -2018,7 +2047,7 @@
     },
     "targets": {
       "com.github.mikephil.charting.renderer.PieChartRenderer":[
-        "drawData(android.graphics.Canvas)"
+        "com.github.mikephil.charting.renderer.PieChartRenderer.drawData(android.graphics.Canvas)void"
       ]
     },
     "scenarioJars": {
@@ -2047,7 +2076,7 @@
     },
     "targets": {
       "com.xxmassdeveloper.mpchartexample.fragments.SimpleFragment":[
-        "generateScatterData(int| float| int)"
+        "com.xxmassdeveloper.mpchartexample.fragments.SimpleFragment.generateScatterData(int;float;int)com.github.mikephil.charting.data.ScatterData"
       ]
     },
     "scenarioJars": {
@@ -2076,7 +2105,7 @@
     },
     "targets": {
       "org.jboss.netty.handler.codec.frame.LengthFieldBasedFrameDecoder":[
-        "decode(org.jboss.netty.channel.ChannelHandlerContext,org.jboss.netty.channel.Channel,org.jboss.netty.buffer.ChannelBuffer)java.lang.Object"
+        "org.jboss.netty.handler.codec.frame.LengthFieldBasedFrameDecoder.decode(org.jboss.netty.channel.ChannelHandlerContext,org.jboss.netty.channel.Channel,org.jboss.netty.buffer.ChannelBuffer)java.lang.Object"
       ]
     },
     "scenarioJars": {
@@ -2105,7 +2134,7 @@
     },
     "targets": {
       "org.jboss.netty.handler.codec.frame.LengthFieldBasedFrameDecoder":[
-        "decode(org.jboss.netty.channel.ChannelHandlerContext| org.jboss.netty.channel.Channel| org.jboss.netty.buffer.ChannelBuffer)"
+        "org.jboss.netty.handler.codec.frame.LengthFieldBasedFrameDecoder.decode(org.jboss.netty.channel.ChannelHandlerContext,org.jboss.netty.channel.Channel,org.jboss.netty.buffer.ChannelBuffer)java.lang.Object"
       ]
     },
     "scenarioJars": {
@@ -2134,7 +2163,7 @@
     },
     "targets": {
       "com.squareup.okhttp.internal.bytes.GzipSource":[
-        "consumeHeader(Deadline)"
+        "com.squareup.okhttp.internal.bytes.GzipSource.consumeHeader(Deadline)void"
       ]
     },
     "scenarioJars": {
@@ -2163,7 +2192,7 @@
     },
     "targets": {
       "com.squareup.okhttp.internal.bytes.GzipSource":[
-        "consumeHeader(Deadline)"
+        "com.squareup.okhttp.internal.bytes.GzipSource.consumeHeader(Deadline)void"
       ]
     },
     "scenarioJars": {
@@ -2192,7 +2221,7 @@
     },
     "targets": {
       "com.squareup.okhttp.OkHttpClient":[
-        "copyWithDefaults()"
+        "com.squareup.okhttp.OkHttpClient.copyWithDefaults()com.squareup.okhttp.OkHttpClient"
       ]
     },
     "scenarioJars": {
@@ -2221,7 +2250,7 @@
     },
     "targets": {
       "com.squareup.okhttp.OkHttpClient":[
-        "copyWithDefaults()"
+        "com.squareup.okhttp.OkHttpClient.copyWithDefaults()com.squareup.okhttp.OkHttpClient"
       ]
     },
     "scenarioJars": {
@@ -2250,7 +2279,7 @@
     },
     "targets": {
       "org.opentripplanner.routing.spt.MultiShortestPathTree":[
-        "dominates(org.opentripplanner.routing.core.State| org.opentripplanner.routing.core.State)"
+        "org.opentripplanner.routing.spt.MultiShortestPathTree.dominates(org.opentripplanner.routing.core.State; org.opentripplanner.routing.core.State)boolean"
       ]
     },
     "scenarioJars": {

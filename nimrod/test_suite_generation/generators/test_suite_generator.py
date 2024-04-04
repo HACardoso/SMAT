@@ -29,7 +29,7 @@ class TestSuiteGenerator(ABC):
         if use_determinism:
             logging.debug('Using deterministic test suite generation')
             
-        suite_dir = self.get_generator_tool_name() + "_" + str(int(time()))
+        suite_dir = self.get_generator_tool_name() + "_" + str(int(seed))
         test_suite_path = path.join(get_base_output_path(), scenario.project_name, scenario.scenario_commits.merge[:6], suite_dir)
 
         makedirs(test_suite_path, exist_ok=True)

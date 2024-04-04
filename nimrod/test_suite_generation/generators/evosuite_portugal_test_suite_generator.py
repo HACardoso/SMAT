@@ -28,10 +28,6 @@ class EvosuitePortugalTestSuiteGenerator(TestSuiteGenerator):
             '-Dtest_factory=MULTI_TEST',
             '-Dassertion_strategy=SPECIFIC',
             '-Ddistance_threshold=0.05',
-            '-Dsandbox=false',
-            '-Djunit_check=false',
-            '-Dminimize=false',
-            '-Dinline=false',
             f'-seed={seed}',
           ]
 
