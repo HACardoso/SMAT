@@ -98,4 +98,4 @@ class SMAT:
       #suites_33330 = self._test_suite_generation.generate_test_suites(scenario, scenario.scenario_jars.right, use_determinism, 33330)
       #lst.append(suites_33330)
 
-      return lst
+      return suites_3

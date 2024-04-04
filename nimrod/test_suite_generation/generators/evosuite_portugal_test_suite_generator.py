@@ -18,17 +18,23 @@ class EvosuitePortugalTestSuiteGenerator(TestSuiteGenerator):
         for class_name, methods in scenario.targets.items():
           logging.debug(f"Starting generation for class {class_name}")
           params = [
-            '-jar', f'{EVOSUITE_PORTUGAL}' ,
-            f'-projectCP="{scenario.scenario_jars.merge}:{EVOSUITE_PORTUGAL}"' ,
-            f'-class="{class_name}"' ,
-            f'-Dregressioncp="{scenario.scenario_jars.left}:{EVOSUITE_PORTUGAL}"' ,
-            f'-Dsecond_regressioncp="{scenario.scenario_jars.right}:{EVOSUITE_PORTUGAL}"',
+            '-jar', EVOSUITE_PORTUGAL,
+            '-projectCP', str(scenario.scenario_jars.merge +':'+ EVOSUITE_PORTUGAL),
+            '-class', class_name,
+            '-Dregressioncp',scenario.scenario_jars.left ,
+            '-Dsecond_regressioncp', scenario.scenario_jars.right,
             '-criterion=METHODCALL',
             #-criterion=LINE:BRANCH:EXCEPTION:WEAKMUTATION:OUTPUT:METHOD:METHODNOEXCEPTION:CBRANCH:METHODCALL
             '-Dtest_factory=MULTI_TEST',
             '-Dassertion_strategy=SPECIFIC',
             '-Ddistance_threshold=0.05',
             f'-seed={seed}',
+            '-Dp_reflection_on_private=0',
+            '-Dreflection_start_percent=0',
+            '-Dp_functional_mocking=0',
+            '-Dfunctional_mocking_percent=0',
+            '-Dminimize=false',
+            '-Dinline=false'
           ]
 
           

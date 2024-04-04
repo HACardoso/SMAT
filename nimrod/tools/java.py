@@ -101,6 +101,11 @@ class Java:
                 f.write("DEBUG java - Starting execution of java command: "+str(''.join(command))+"\n")
                 f.close()
                 #subprocess.run(command)
+                print("Command: ",command)
+                print("CWD: ", cwd)
+                print("ENV: ", env)
+                print("Timeout: ", timeout)
+                print("STDERR: ", subprocess.STDOUT)
                 return subprocess.check_output(command, 
                                                cwd=cwd,
                                                env=env,

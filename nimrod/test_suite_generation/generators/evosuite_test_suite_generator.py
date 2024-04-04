@@ -13,7 +13,7 @@ class EvosuiteTestSuiteGenerator(TestSuiteGenerator):
     def get_generator_tool_name(self) -> str:
         return "EVOSUITE"
 
-    def _execute_tool_for_tests_generation(self, input_jar: str, output_path: str, scenario: MergeScenarioUnderAnalysis, use_determinism: bool) -> None:
+    def _execute_tool_for_tests_generation(self, input_jar: str, output_path: str, scenario: MergeScenarioUnderAnalysis, use_determinism: bool, seed :int) -> None:
 
         
         
@@ -31,6 +31,7 @@ class EvosuiteTestSuiteGenerator(TestSuiteGenerator):
               '-Dminimize=false',
               '-Djunit_check=false',
               '-Dinline=false',
+              f'-seed={seed}'
           ]
           
           if use_determinism:
