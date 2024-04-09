@@ -16,7 +16,7 @@
     },
     "targets": {
       "org.activiti.engine.impl.persistence.entity.DeploymentEntityManager":[
-        "org.activiti.engine.impl.persistence.entity.DeploymentEntityManager.deleteDeployment(java.lang.String;boolean)void"
+        "deleteDeployment(java.lang.String;boolean)"
       ]
     },
     "scenarioJars": {
@@ -44,7 +44,7 @@
     },
     "targets": {
       "org.activiti.engine.impl.persistence.entity.DeploymentEntityManager":[
-        "org.activiti.engine.impl.persistence.entity.DeploymentEntityManager.deleteDeployment(java.lang.String,boolean)void"
+        "deleteDeployment(java.lang.String,boolean)"
       ]
     },
     "scenarioJars": {
@@ -73,7 +73,7 @@
     },
     "targets": {
       "org.activiti.engine.impl.bpmn.behavior.UserTaskActivityBehavior":[
-        "org.activiti.engine.impl.bpmn.behavior.UserTaskActivityBehavior.execute(org.activiti.engine.impl.pvm.delegate.ActivityExecution)void"
+        "execute(org.activiti.engine.impl.pvm.delegate.ActivityExecution)"
       ]
     },
     "scenarioJars": {
@@ -102,7 +102,7 @@
     },
     "targets": {
       "org.activiti.engine.impl.bpmn.behavior.UserTaskActivityBehavior":[
-        "org.activiti.engine.impl.bpmn.behavior.UserTaskActivityBehavior.execute(org.activiti.engine.impl.pvm.delegate.ActivityExecution)void"
+        "execute(org.activiti.engine.impl.pvm.delegate.ActivityExecution)"
       ]
     },
     "scenarioJars": {
@@ -131,7 +131,7 @@
     },
     "targets": {
       "org.antlr.v4.codegen.target.Python2Target":[
-        "org.antlr.v4.codegen.target.Python2Target.addBadWords()void"
+        "addBadWords()"
       ]
     },
     "scenarioJars": {
@@ -160,7 +160,7 @@
     },
     "targets": {
       "org.antlr.v4.codegen.target.Python2Target":[
-        "org.antlr.v4.codegen.target.Python2Target.addBadWords()void"
+        "addBadWords()"
       ]
     },
     "scenarioJars": {
@@ -189,7 +189,7 @@
     },
     "targets": {
       "org.antlr.v4.codegen.target.Python3Target":[
-        "org.antlr.v4.codegen.target.Python3Target.addBadWords()void"
+        "addBadWords()"
       ]
     },
     "scenarioJars": {
@@ -218,7 +218,7 @@
     },
     "targets": {
       "org.antlr.v4.codegen.target.Python3Target":[
-        "org.antlr.v4.codegen.target.Python3Target.addBadWords()void"
+        "addBadWords()"
       ]
     },
     "scenarioJars": {
@@ -247,7 +247,7 @@
     },
     "targets": {
       "org.atmosphere.cpr.AtmosphereConfig":[
-        "org.atmosphere.cpr.AtmosphereConfig.AtmosphereConfig(AtmosphereFramework)"
+        "AtmosphereConfig(AtmosphereFramework)"
       ]
     },
     "scenarioJars": {
@@ -276,7 +276,7 @@
     },
     "targets": {
       "org.atmosphere.cpr.AtmosphereConfig":[
-        "org.atmosphere.cpr.AtmosphereConfig.AtmosphereConfig(AtmosphereFramework)"
+        "AtmosphereConfig(AtmosphereFramework)"
       ]
     },
     "scenarioJars": {
@@ -305,7 +305,7 @@
     },
     "targets": {
       "io.cloudslang.lang.api.SlangImpl":[
-        "io.cloudslang.lang.api.SlangImpl.getAllEventTypes()java.Util.Set<java.lang.String>"
+        "getAllEventTypes()"
       ]
     },
     "scenarioJars": {
@@ -334,7 +334,7 @@
     },
     "targets": {
       "io.cloudslang.lang.api.SlangImpl":[
-        "io.cloudslang.lang.api.SlangImpl.getAllEventTypes()java.Util.Set<java.lang.String>"
+        "getAllEventTypes()"
       ]
     },
     "scenarioJars": {
@@ -363,7 +363,7 @@
     },
     "targets": {
       "io.cloudslang.lang.api.SlangImplTest":[
-        "io.cloudslang.lang.api.SlangImplTest.testSubscribeOnAllEventsWithListener()void"
+        "testSubscribeOnAllEventsWithListener()"
       ]
     },
     "scenarioJars": {
@@ -392,7 +392,7 @@
     },
     "targets": {
       "io.cloudslang.lang.api.SlangImplTest":[
-        "io.cloudslang.lang.api.SlangImplTest.testSubscribeOnAllEventsWithListener()void"
+        "testSubscribeOnAllEventsWithListener()"
       ]
     },
     "scenarioJars": {
@@ -421,7 +421,7 @@
     },
     "targets": {
       "cuke4duke.internal.java.JavaLanguage":[
-        "cuke4duke.internal.java.JavaLanguage.load(java.lang.String)void"
+        "load(java.lang.String)"
       ]
     },
     "scenarioJars": {
@@ -450,7 +450,7 @@
     },
     "targets": {
       "cuke4duke.internal.java.JavaLanguage":[
-        "cuke4duke.internal.java.JavaLanguage.load(java.lang.String)void"
+        "load(java.lang.String)"
       ]
     },
     "scenarioJars": {
@@ -479,7 +479,7 @@
     },
     "targets": {
       "com.metamx.druid.loading.S3SegmentPusher":[
-        "com.metamx.druid.loading.S3SegmentPusher.push(java.io.File,com.metamx.druid.client.DataSegment)com.metamx.druid.client.DataSegment"
+        "push(java.io.File,com.metamx.druid.client.DataSegment)"
       ]
     },
     "scenarioJars": {
@@ -508,7 +508,7 @@
     },
     "targets": {
       "com.metamx.druid.loading.S3SegmentPusher":[
-        "com.metamx.druid.loading.S3SegmentPusher.push(java.io.File,com.metamx.druid.client.DataSegment)com.metamx.druid.client.DataSegment"
+        "push(java.io.File,com.metamx.druid.client.DataSegment)"
       ]
     },
     "scenarioJars": {
@@ -537,7 +537,7 @@
     },
     "targets": {
       "org.elasticsearch.index.query.support.NestedInnerQueryParseSupport":[
-        "org.elasticsearch.index.query.support.NestedInnerQueryParseSupport.setPathLevel()void"
+        "setPathLevel()"
       ]
     },
     "scenarioJars": {
@@ -566,7 +566,7 @@
     },
     "targets": {
       "org.elasticsearch.index.query.support.NestedInnerQueryParseSupport":[
-        "org.elasticsearch.index.query.support.NestedInnerQueryParseSupport.setPathLevel()void"
+        "setPathLevel()"
       ]
     },
     "scenarioJars": {
@@ -595,7 +595,7 @@
     },
     "targets": {
       "org.elasticsearch.index.query.SimpleIndexQueryParserTests":[
-        "org.elasticsearch.index.query.SimpleIndexQueryParserTests.setup()void"
+        "setup()"
       ]
     },
     "scenarioJars": {
@@ -624,7 +624,7 @@
     },
     "targets": {
       "org.elasticsearch.index.query.SimpleIndexQueryParserTests":[
-        "org.elasticsearch.index.query.SimpleIndexQueryParserTests.setup()void"
+        "setup()"
       ]
     },
     "scenarioJars": {
@@ -653,7 +653,7 @@
     },
     "targets": {
       "org.elasticsearch.action.DocWriteResponse":[
-        "org.elasticsearch.action.DocWriteResponse.writeTo(org.elasticsearch.common.io.stream.StreamOutput)void"
+        "writeTo(org.elasticsearch.common.io.stream.StreamOutput)"
       ]
     },
     "scenarioJars": {
@@ -682,7 +682,7 @@
     },
     "targets": {
       "org.elasticsearch.action.DocWriteResponse":[
-        "org.elasticsearch.action.DocWriteResponse.writeTo(org.elasticsearch.common.io.stream.StreamOutput)void"
+        "writeTo(org.elasticsearch.common.io.stream.StreamOutput)"
       ]
     },
     "scenarioJars": {
@@ -711,7 +711,7 @@
     },
     "targets": {
       "org.elasticsearch.action.DocWriteResponse":[
-        "org.elasticsearch.action.DocWriteResponse.readFrom(org.elasticsearch.common.io.stream.StreamInput)void"
+        "readFrom(org.elasticsearch.common.io.stream.StreamInput)"
       ]
     },
     "scenarioJars": {
@@ -740,7 +740,7 @@
     },
     "targets": {
       "org.elasticsearch.action.DocWriteResponse":[
-        "org.elasticsearch.action.DocWriteResponse.readFrom(org.elasticsearch.common.io.stream.StreamInput)void"
+        "readFrom(org.elasticsearch.common.io.stream.StreamInput)"
       ]
     },
     "scenarioJars": {
@@ -769,7 +769,7 @@
     },
     "targets": {
       "org.elasticsearch.action.DocWriteResponse":[
-        "org.elasticsearch.action.DocWriteResponse.toXContent(org.elasticsearch.common.xcontent.XContentBuilder;Params)org.elasticsearch.common.xcontent.XContentBuilder"
+        "toXContent(org.elasticsearch.common.xcontent.XContentBuilder;Params)"
       ]
     },
     "scenarioJars": {
@@ -798,7 +798,7 @@
     },
     "targets": {
       "org.elasticsearch.action.DocWriteResponse":[
-        "org.elasticsearch.action.DocWriteResponse.toXContent(org.elasticsearch.common.xcontent.XContentBuilder;Params)org.elasticsearch.common.xcontent.XContentBuilder"
+        "toXContent(org.elasticsearch.common.xcontent.XContentBuilder;Params)"
       ]
     },
     "scenarioJars": {
@@ -827,7 +827,7 @@
     },
     "targets": {
       "org.elasticsearch.index.analysis.synonyms.SynonymsAnalysisTest":[
-        "org.elasticsearch.index.analysis.synonyms.SynonymsAnalysisTest.testSynonymsAnalysis()void"
+        "testSynonymsAnalysis()"
       ]
     },
     "scenarioJars": {
@@ -856,7 +856,7 @@
     },
     "targets": {
       "org.elasticsearch.index.analysis.synonyms.SynonymsAnalysisTest":[
-        "org.elasticsearch.index.analysis.synonyms.SynonymsAnalysisTest.testSynonymsAnalysis()void"
+        "testSynonymsAnalysis()"
       ]
     },
     "scenarioJars": {
@@ -885,7 +885,7 @@
     },
     "targets": {
       "org.elasticsearch.river.mongodb.Slurper":[
-        "org.elasticsearch.river.mongodb.Slurper.assignCollections()boolean"
+        "assignCollections()"
       ]
     },
     "scenarioJars": {
@@ -914,7 +914,7 @@
     },
     "targets": {
       "org.elasticsearch.river.mongodb.Slurper":[
-        "org.elasticsearch.river.mongodb.Slurper.assignCollections()boolean"
+        "assignCollections()"
       ]
     },
     "scenarioJars": {
@@ -943,7 +943,7 @@
     },
     "targets": {
       "org.elasticsearch.river.mongodb.MongoDBRiverDefinition":[
-        "org.elasticsearch.river.mongodb.MongoDBRiverDefinition.parseSettings(java.lang.String,java.lang.String,org.elasticsearch.river.RiverSettings,org.elasticsearch.script.ScriptService)org.elasticsearch.river.mongodb.MongoDBRiverDefinition"
+        "parseSettings(java.lang.String,java.lang.String,org.elasticsearch.river.RiverSettings,org.elasticsearch.script.ScriptService)"
       ]
     },
     "scenarioJars": {
@@ -972,7 +972,7 @@
     },
     "targets": {
       "org.elasticsearch.river.mongodb.MongoDBRiverDefinition":[
-        "org.elasticsearch.river.mongodb.MongoDBRiverDefinition.parseSettings(java.lang.String,java.lang.String,org.elasticsearch.river.RiverSettings,org.elasticsearch.script.ScriptService)org.elasticsearch.river.mongodb.MongoDBRiverDefinition"
+        "parseSettings(java.lang.String,java.lang.String,org.elasticsearch.river.RiverSettings,org.elasticsearch.script.ScriptService)"
       ]
     },
     "scenarioJars": {
@@ -1001,7 +1001,7 @@
     },
     "targets": {
       "org.elasticsearch.river.mongodb.Indexer":[
-        "org.elasticsearch.river.mongodb.Indexer.processBlockingQueue(org.elasticsearch.river.mongodb.MongoDBRiver.QueueEntry)Timestamp<?>"
+        "processBlockingQueue(org.elasticsearch.river.mongodb.MongoDBRiver.QueueEntry)"
       ]
     },
     "scenarioJars": {
@@ -1030,7 +1030,7 @@
     },
     "targets": {
       "org.elasticsearch.river.mongodb.Indexer":[
-        "org.elasticsearch.river.mongodb.Indexer.processBlockingQueue(org.elasticsearch.river.mongodb.MongoDBRiver.QueueEntry)Timestamp<?>"
+        "processBlockingQueue(org.elasticsearch.river.mongodb.MongoDBRiver.QueueEntry)"
       ]
     },
     "scenarioJars": {
@@ -1059,7 +1059,7 @@
     },
     "targets": {
       "org.elasticsearch.river.mongodb.Indexer":[
-        "org.elasticsearch.river.mongodb.Indexer.applyAdvancedTransformation(org.elasticsearch.river.mongodb.MongoDBRiver.QueueEntry,java.lang.String)Timestamp<?>"
+        "applyAdvancedTransformation(org.elasticsearch.river.mongodb.MongoDBRiver.QueueEntry,java.lang.String)"
       ]
     },
     "scenarioJars": {
@@ -1088,7 +1088,7 @@
     },
     "targets": {
       "org.elasticsearch.river.mongodb.Indexer":[
-        "org.elasticsearch.river.mongodb.Indexer.applyAdvancedTransformation(org.elasticsearch.river.mongodb.MongoDBRiver.QueueEntry,java.lang.String)Timestamp<?>"
+        "applyAdvancedTransformation(org.elasticsearch.river.mongodb.MongoDBRiver.QueueEntry,java.lang.String)"
       ]
     },
     "scenarioJars": {
@@ -1117,7 +1117,7 @@
     },
     "targets": {
       "org.elasticsearch.river.mongodb.Slurper":[
-        "org.elasticsearch.river.mongodb.Slurper.run()void"
+        "run()"
       ]
     },
     "scenarioJars": {
@@ -1146,7 +1146,7 @@
     },
     "targets": {
       "org.elasticsearch.river.mongodb.Slurper":[
-        "org.elasticsearch.river.mongodb.Slurper.run()void"
+        "run()"
       ]
     },
     "scenarioJars": {
@@ -1175,7 +1175,7 @@
     },
     "targets": {
       "org.elasticsearch.river.mongodb.Slurper":[
-        "org.elasticsearch.river.mongodb.Slurper.addToStream(Operation,Timestamp<?>,com.mongodb.DBObject,java.lang.String)void"
+        "addToStream(Operation,Timestamp<?>,com.mongodb.DBObject,java.lang.String)"
       ]
     },
     "scenarioJars": {
@@ -1204,7 +1204,7 @@
     },
     "targets": {
       "org.elasticsearch.river.mongodb.Slurper":[
-        "org.elasticsearch.river.mongodb.Slurper.addToStream(Operation,Timestamp<?>,com.mongodb.DBObject,java.lang.String)void"
+        "addToStream(Operation,Timestamp<?>,com.mongodb.DBObject,java.lang.String)"
       ]
     },
     "scenarioJars": {
@@ -1233,8 +1233,7 @@
     },
     "targets": {
       "com.netflix.appinfo.ApplicationInfoManager":[
-        "com.netflix.appinfo.ApplicationInfoManager.ApplicationInfoManager()",
-        "com.netflix.appinfo.ApplicationInfoManager.(EurekaInstanceConfig, com.netflix.appinfo.InstanceInfo)"
+        "ApplicationInfoManager()"
       ]
     },
     "scenarioJars": {
@@ -1263,8 +1262,7 @@
     },
     "targets": {
       "com.netflix.appinfo.ApplicationInfoManager":[
-        "com.netflix.appinfo.ApplicationInfoManager.ApplicationInfoManager()",
-        "com.netflix.appinfo.ApplicationInfoManager.(EurekaInstanceConfig, com.netflix.appinfo.InstanceInfo)"
+        "ApplicationInfoManager()"
       ]
     },
     "scenarioJars": {
@@ -1293,7 +1291,7 @@
     },
     "targets": {
       "fitnesse.testsystems.slim.tables.SlimTableFactory":[
-        "fitnesse.testsystems.slim.tables.SlimTableFactory.SlimTableFactory()"
+        "SlimTableFactory()"
       ]
     },
     "scenarioJars": {
@@ -1322,7 +1320,7 @@
     },
     "targets": {
       "fitnesse.testsystems.slim.tables.SlimTableFactory":[
-        "fitnesse.testsystems.slim.tables.SlimTableFactory.SlimTableFactory()"
+        "SlimTableFactory()"
       ]
     },
     "scenarioJars": {
@@ -1351,7 +1349,7 @@
     },
     "targets": {
       "fitnesse.testsystems.slim.tables.SlimTableFactoryTest":[
-        "fitnesse.testsystems.slim.tables.SlimTableFactoryTest.setUp()void"
+        "setUp()"
       ]
     },
     "scenarioJars": {
@@ -1380,7 +1378,7 @@
     },
     "targets": {
       "fitnesse.testsystems.slim.tables.SlimTableFactoryTest":[
-        "fitnesse.testsystems.slim.tables.SlimTableFactoryTest.setUp()void"
+        "setUp()"
       ]
     },
     "scenarioJars": {
@@ -1409,7 +1407,7 @@
     },
     "targets": {
       "me.prettyprint.cassandra.connection.HConnectionManager":[
-        "me.prettyprint.cassandra.connection.HConnectionManager.operateWithFailover(me.prettyprint.cassandra.service.Operation<?>)"
+        "operateWithFailover(me.prettyprint.cassandra.service.Operation<?>)"
       ]
     },
     "scenarioJars": {
@@ -1438,7 +1436,7 @@
     },
     "targets": {
       "me.prettyprint.cassandra.connection.HConnectionManager":[
-        "me.prettyprint.cassandra.connection.HConnectionManager.operateWithFailover(me.prettyprint.cassandra.service.Operation<?>)"
+        "operateWithFailover(me.prettyprint.cassandra.service.Operation<?>)"
       ]
     },
     "scenarioJars": {
@@ -1467,7 +1465,7 @@
     },
     "targets": {
       "me.prettyprint.cassandra.connection.client.HSaslThriftClient":[
-        "me.prettyprint.cassandra.connection.client.HSaslThriftClient.open()me.prettyprint.cassandra.connection.client.HSaslThriftClient"
+        "open()"
       ]
     },
     "scenarioJars": {
@@ -1496,7 +1494,7 @@
     },
     "targets": {
       "me.prettyprint.cassandra.connection.client.HSaslThriftClient":[
-        "me.prettyprint.cassandra.connection.client.HSaslThriftClient.open()me.prettyprint.cassandra.connection.client.HSaslThriftClient"
+        "open()"
       ]
     },
     "scenarioJars": {
@@ -1525,7 +1523,7 @@
     },
     "targets": {
       "me.prettyprint.cassandra.connection.client.HKerberosThriftClient":[
-        "me.prettyprint.cassandra.connection.client.HKerberosThriftClient.open()me.prettyprint.cassandra.connection.client.HKerberosThriftClient"
+        "open()"
       ]
     },
     "scenarioJars": {
@@ -1554,7 +1552,7 @@
     },
     "targets": {
       "me.prettyprint.cassandra.connection.client.HKerberosThriftClient":[
-        "me.prettyprint.cassandra.connection.client.HKerberosThriftClient.open()me.prettyprint.cassandra.connection.client.HKerberosThriftClient"
+        "open()"
       ]
     },
     "scenarioJars": {
@@ -1583,7 +1581,7 @@
     },
     "targets": {
       "me.prettyprint.cassandra.connection.client.HThriftClient":[
-        "me.prettyprint.cassandra.connection.client.HThriftClient.open()me.prettyprint.cassandra.connection.client.HThriftClient"
+        "open()"
       ]
     },
     "scenarioJars": {
@@ -1612,7 +1610,7 @@
     },
     "targets": {
       "me.prettyprint.cassandra.connection.client.HThriftClient":[
-        "me.prettyprint.cassandra.connection.client.HThriftClient.open()me.prettyprint.cassandra.connection.client.HThriftClient"
+        "open()"
       ]
     },
     "scenarioJars": {
@@ -1641,7 +1639,7 @@
     },
     "targets": {
       "com.zaxxer.hikari.HikariConfig":[
-        "com.zaxxer.hikari.HikariConfig.validate()void"
+        "validate()"
       ]
     },
     "scenarioJars": {
@@ -1670,7 +1668,7 @@
     },
     "targets": {
       "com.zaxxer.hikari.HikariConfig":[
-        "com.zaxxer.hikari.HikariConfig.validate()void"
+        "validate()"
       ]
     },
     "scenarioJars": {
@@ -1699,7 +1697,7 @@
     },
     "targets": {
       "com.github.javafaker.Faker":[
-        "com.github.javafaker.Faker.Faker(java.util.Locale; java.util.Random)"
+        "Faker(java.util.Locale; java.util.Random)"
       ]
     },
     "scenarioJars": {
@@ -1728,7 +1726,7 @@
     },
     "targets": {
       "com.github.javafaker.Faker":[
-        "com.github.javafaker.Faker.Faker(java.util.Locale; java.util.Random)"
+        "Faker(java.util.Locale; java.util.Random)"
       ]
     },
     "scenarioJars": {
@@ -1757,7 +1755,7 @@
     },
     "targets": {
       "org.jooq.impl.DSL":[
-        "org.jooq.impl.DSL.countDistinct(org.jooq.Field<?>)org.jooq.AggregateFunction<Integer>"
+        "countDistinct(org.jooq.Field<?>)"
       ]
     },
     "scenarioJars": {
@@ -1786,7 +1784,7 @@
     },
     "targets": {
       "org.jooq.impl.DSL":[
-        "org.jooq.impl.DSL.countDistinct(org.jooq.Field<?>)org.jooq.AggregateFunction<Integer>"
+        "countDistinct(org.jooq.Field<?>)"
       ]
     },
     "scenarioJars": {
@@ -1815,7 +1813,7 @@
     },
     "targets": {
       "org.jsoup.helper.HttpConnection":[
-        "org.jsoup.helper.HttpConnection.execute(org.jsoup.Connection.Request; org.jsoup.helper.HttpConnection.Response)org.jsoup.helper.HttpConnection.Response"
+        "execute(org.jsoup.Connection.Request; org.jsoup.helper.HttpConnection.Response)"
       ]
     },
     "scenarioJars": {
@@ -1844,7 +1842,7 @@
     },
     "targets": {
       "org.jsoup.helper.HttpConnection":[
-        "org.jsoup.helper.HttpConnection.execute(org.jsoup.Connection.Request; org.jsoup.helper.HttpConnection.Response)org.jsoup.helper.HttpConnection.Response"
+        "execute(org.jsoup.Connection.Request; org.jsoup.helper.HttpConnection.Response)"
       ]
     },
     "scenarioJars": {
@@ -1873,7 +1871,7 @@
     },
     "targets": {
       "org.jsoup.helper.HttpConnection":[
-        "org.jsoup.helper.HttpConnection.execute(org.jsoup.Connection.Request; org.jsoup.helper.HttpConnection.Response)org.jsoup.helper.HttpConnection.Response"
+        "execute(org.jsoup.Connection.Request; org.jsoup.helper.HttpConnection.Response)"
       ]
     },
     "scenarioJars": {
@@ -1902,7 +1900,7 @@
     },
     "targets": {
       "org.jsoup.helper.HttpConnection":[
-        "org.jsoup.helper.HttpConnection.execute(org.jsoup.Connection.Request; org.jsoup.helper.HttpConnection.Response)org.jsoup.helper.HttpConnection.Response"
+        "execute(org.jsoup.Connection.Request; org.jsoup.helper.HttpConnection.Response)"
       ]
     },
     "scenarioJars": {
@@ -1931,7 +1929,7 @@
     },
     "targets": {
       "org.jsoup.nodes.TextNode":[
-        "org.jsoup.nodes.TextNode.outerHtmlHead(java.lang.StringBuilder; int; Document.OutputSettings)void"
+        "outerHtmlHead(java.lang.StringBuilder; int; Document.OutputSettings)"
       ]
     },
     "scenarioJars": {
@@ -1960,7 +1958,7 @@
     },
     "targets": {
       "org.jsoup.nodes.TextNode":[
-        "org.jsoup.nodes.TextNode.outerHtmlHead(java.lang.StringBuilder; int; Document.OutputSettings)void"
+        "outerHtmlHead(java.lang.StringBuilder; int; Document.OutputSettings)"
       ]
     },
     "scenarioJars": {
@@ -1989,7 +1987,7 @@
     },
     "targets": {
       "org.jsoup.helper.HttpConnection":[
-        "org.jsoup.helper.HttpConnection.createConnection(org.jsoup.Connection.Request)java.net.HttpURLConnection"
+        "createConnection(org.jsoup.Connection.Request)"
       ]
     },
     "scenarioJars": {
@@ -2018,7 +2016,7 @@
     },
     "targets": {
       "org.jsoup.helper.HttpConnection":[
-        "org.jsoup.helper.HttpConnection.createConnection(org.jsoup.Connection.Request)java.net.HttpURLConnection"
+        "createConnection(org.jsoup.Connection.Request)"
       ]
     },
     "scenarioJars": {
@@ -2047,7 +2045,7 @@
     },
     "targets": {
       "com.github.mikephil.charting.renderer.PieChartRenderer":[
-        "com.github.mikephil.charting.renderer.PieChartRenderer.drawData(android.graphics.Canvas)void"
+        "drawData(android.graphics.Canvas)"
       ]
     },
     "scenarioJars": {
@@ -2076,7 +2074,7 @@
     },
     "targets": {
       "com.xxmassdeveloper.mpchartexample.fragments.SimpleFragment":[
-        "com.xxmassdeveloper.mpchartexample.fragments.SimpleFragment.generateScatterData(int;float;int)com.github.mikephil.charting.data.ScatterData"
+        "generateScatterData(int;float;int)"
       ]
     },
     "scenarioJars": {
@@ -2105,7 +2103,7 @@
     },
     "targets": {
       "org.jboss.netty.handler.codec.frame.LengthFieldBasedFrameDecoder":[
-        "org.jboss.netty.handler.codec.frame.LengthFieldBasedFrameDecoder.decode(org.jboss.netty.channel.ChannelHandlerContext,org.jboss.netty.channel.Channel,org.jboss.netty.buffer.ChannelBuffer)java.lang.Object"
+        "decode(org.jboss.netty.channel.ChannelHandlerContext,org.jboss.netty.channel.Channel,org.jboss.netty.buffer.ChannelBuffer)"
       ]
     },
     "scenarioJars": {
@@ -2134,7 +2132,7 @@
     },
     "targets": {
       "org.jboss.netty.handler.codec.frame.LengthFieldBasedFrameDecoder":[
-        "org.jboss.netty.handler.codec.frame.LengthFieldBasedFrameDecoder.decode(org.jboss.netty.channel.ChannelHandlerContext,org.jboss.netty.channel.Channel,org.jboss.netty.buffer.ChannelBuffer)java.lang.Object"
+        "decode(org.jboss.netty.channel.ChannelHandlerContext,org.jboss.netty.channel.Channel,org.jboss.netty.buffer.ChannelBuffer)"
       ]
     },
     "scenarioJars": {
@@ -2163,7 +2161,7 @@
     },
     "targets": {
       "com.squareup.okhttp.internal.bytes.GzipSource":[
-        "com.squareup.okhttp.internal.bytes.GzipSource.consumeHeader(Deadline)void"
+        "consumeHeader(Deadline)"
       ]
     },
     "scenarioJars": {
@@ -2192,7 +2190,7 @@
     },
     "targets": {
       "com.squareup.okhttp.internal.bytes.GzipSource":[
-        "com.squareup.okhttp.internal.bytes.GzipSource.consumeHeader(Deadline)void"
+        "consumeHeader(Deadline)"
       ]
     },
     "scenarioJars": {
@@ -2221,7 +2219,7 @@
     },
     "targets": {
       "com.squareup.okhttp.OkHttpClient":[
-        "com.squareup.okhttp.OkHttpClient.copyWithDefaults()com.squareup.okhttp.OkHttpClient"
+        "copyWithDefaults()"
       ]
     },
     "scenarioJars": {
@@ -2250,7 +2248,7 @@
     },
     "targets": {
       "com.squareup.okhttp.OkHttpClient":[
-        "com.squareup.okhttp.OkHttpClient.copyWithDefaults()com.squareup.okhttp.OkHttpClient"
+        "copyWithDefaults()"
       ]
     },
     "scenarioJars": {
@@ -2279,7 +2277,7 @@
     },
     "targets": {
       "org.opentripplanner.routing.spt.MultiShortestPathTree":[
-        "org.opentripplanner.routing.spt.MultiShortestPathTree.dominates(org.opentripplanner.routing.core.State; org.opentripplanner.routing.core.State)boolean"
+        "dominates(org.opentripplanner.routing.core.State; org.opentripplanner.routing.core.State)"
       ]
     },
     "scenarioJars": {
@@ -2308,7 +2306,7 @@
     },
     "targets": {
       "org.opentripplanner.routing.spt.MultiShortestPathTree":[
-        "dominates(org.opentripplanner.routing.core.State| org.opentripplanner.routing.core.State)"
+        "dominates(org.opentripplanner.routing.core.State; org.opentripplanner.routing.core.State)"
       ]
     },
     "scenarioJars": {
@@ -2395,7 +2393,7 @@
     },
     "targets": {
       "quickdt.experiments.OutOfTimeCrossValidatorRunner":[
-        "getRandomForestBuilder(int| int)"
+        "getRandomForestBuilder(int; int)"
       ]
     },
     "scenarioJars": {
@@ -2424,7 +2422,7 @@
     },
     "targets": {
       "quickdt.experiments.OutOfTimeCrossValidatorRunner":[
-        "getRandomForestBuilder(int| int)"
+        "getRandomForestBuilder(int; int)"
       ]
     },
     "scenarioJars": {
@@ -2569,7 +2567,7 @@
     },
     "targets": {
       "retrofit.RestAdapter":[
-        "logAndReplaceResponse(java.lang.String| retrofit.client.Response| long)"
+        "logAndReplaceResponse(java.lang.String; retrofit.client.Response; long)"
       ]
     },
     "scenarioJars": {
@@ -2597,7 +2595,7 @@
     },
     "targets": {
       "retrofit.RestAdapter":[
-        "logAndReplaceResponse(java.lang.String| retrofit.client.Response| long)"
+        "logAndReplaceResponse(java.lang.String; retrofit.client.Response; long)"
       ]
     },
     "scenarioJars": {
@@ -3003,7 +3001,7 @@
     },
     "targets": {
       "org.springframework.boot.autoconfigure.cache.RedisCacheConfiguration":[
-        "cacheManager(org.springframework.data.redis.core.RedisTemplate<Object|Object>)"
+        "cacheManager(org.springframework.data.redis.core.RedisTemplate<java.lang.Object;java.lang.Object>)"
       ]
     },
     "scenarioJars": {
@@ -3177,7 +3175,7 @@
     },
     "targets": {
       "org.apache.storm.kafka.spout.KafkaSpout":[
-        "emitTupleIfNotEmitted(org.apache.kafka.clients.consumer.ConsumerRecord<K|V>)"
+        "emitTupleIfNotEmitted(org.apache.kafka.clients.consumer.ConsumerRecord<K;V>)"
       ]
     },
     "scenarioJars": {
@@ -3206,7 +3204,7 @@
     },
     "targets": {
       "org.apache.storm.kafka.spout.KafkaSpout":[
-        "emitTupleIfNotEmitted(org.apache.kafka.clients.consumer.ConsumerRecord<K|V>)"
+        "emitTupleIfNotEmitted(org.apache.kafka.clients.consumer.ConsumerRecord<K;V>)"
       ]
     },
     "scenarioJars": {
@@ -3234,7 +3232,7 @@
     },
     "targets": {
       "io.swagger.jaxrs2.OperationParser":[
-        "getSchemaFromAnnotation(io.swagger.oas.annotations.media.Schema"
+        "getSchemaFromAnnotation(io.swagger.oas.annotations.media.Schema)"
       ]
     },
     "scenarioJars": {
@@ -3263,7 +3261,7 @@
     },
     "targets": {
       "io.swagger.jaxrs2.OperationParser":[
-        "getSchemaFromAnnotation(io.swagger.oas.annotations.media.Schema"
+        "getSchemaFromAnnotation(io.swagger.oas.annotations.media.Schema)"
       ]
     },
     "scenarioJars": {
@@ -3321,7 +3319,7 @@
     },
     "targets": {
       "com.github.kongchen.swagger.docgen.reader.AbstractReader":[
-        "hasValidAnnotations(List<java.lang.annotation.Annotation>)"
+        "hasValidAnnotations(java.util.List<java.lang.annotation.Annotation>)"
       ]
     },
     "scenarioJars": {
@@ -3694,7 +3692,7 @@
     },
     "targets": {
       "org.webbitserver.netty.WebSocketClient":[
-        "adjustPipelineToWebSocket(org.jboss.netty.channel.ChannelHandlerContext| org.jboss.netty.channel.MessageEvent| org.jboss.netty.channel.ChannelHandler| org.jboss.netty.channel.ChannelHandler)"
+        "adjustPipelineToWebSocket(org.jboss.netty.channel.ChannelHandlerContext; org.jboss.netty.channel.MessageEvent; org.jboss.netty.channel.ChannelHandler; org.jboss.netty.channel.ChannelHandler)"
       ]
     },
     "scenarioJars": {
@@ -3723,7 +3721,7 @@
     },
     "targets": {
       "org.webbitserver.netty.WebSocketClient":[
-        "adjustPipelineToWebSocket(org.jboss.netty.channel.ChannelHandlerContext| org.jboss.netty.channel.MessageEvent| org.jboss.netty.channel.ChannelHandler| org.jboss.netty.channel.ChannelHandler)"
+        "adjustPipelineToWebSocket(org.jboss.netty.channel.ChannelHandlerContext; org.jboss.netty.channel.MessageEvent; org.jboss.netty.channel.ChannelHandler; org.jboss.netty.channel.ChannelHandler)"
       ]
     },
     "scenarioJars": {
