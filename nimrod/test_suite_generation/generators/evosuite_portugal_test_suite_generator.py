@@ -82,7 +82,7 @@ class EvosuitePortugalTestSuiteGenerator(TestSuiteGenerator):
 
     def _create_method_list(self,class_name: str, methods: "List[str]"):
         rectified_methods = [self._convert_method_signature(
-            class_name + method) for method in methods]
+            class_name + "." + method) for method in methods]
         return (":").join(rectified_methods)
 
 

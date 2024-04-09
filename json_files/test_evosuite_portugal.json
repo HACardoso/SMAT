@@ -131,7 +131,7 @@
       },
       "targets": {
         "org.antlr.v4.codegen.target.Python2Target":[
-          "python2Keywords"
+          "addBadWords()"
         ]
       },
       "scenarioJars": {
@@ -160,7 +160,7 @@
       },
       "targets": {
         "org.antlr.v4.codegen.target.Python2Target":[
-          "python2Keywords"
+          "addBadWords()"
         ]
       },
       "scenarioJars": {
@@ -189,7 +189,7 @@
       },
       "targets": {
         "org.antlr.v4.codegen.target.Python3Target":[
-          "python3Keywords"
+          "addBadWords()"
         ]
       },
       "scenarioJars": {
@@ -218,7 +218,7 @@
       },
       "targets": {
         "org.antlr.v4.codegen.target.Python3Target":[
-          "python3Keywords"
+          "addBadWords()"
         ]
       },
       "scenarioJars": {

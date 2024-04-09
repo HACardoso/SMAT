@@ -9,6 +9,6 @@
   "path_output_csv": "",
   "logger_level": "DEBUG",
 
-  "test_suite_generators":["randoop-modified", "project"],
+  "test_suite_generators":["randoop-modified"],
   "test_suite_generation_search_time_available":"300"
 }

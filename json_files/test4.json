@@ -16,7 +16,7 @@
     },
     "targets": {
       "org.antlr.v4.codegen.target.Python2Target":[
-        "org.antlr.v4.codegen.target.Python2Target.addBadWords()void"
+        "addBadWords()"
       ]
     },
     "scenarioJars": {

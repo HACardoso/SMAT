@@ -1,0 +1,60 @@
+[
+    {
+        "projectName": "antlr4",
+        "runAnalysis": true,
+        "scenarioCommits": {
+          "base": "d0fb48c2b89128158950f4b32a61d50d52d981ea",
+          "left": "196c4d591",
+          "right": "99b2d6616",
+          "merge": "69ff2669eec265e25721dbc27cb00f6c381d0b41"
+        },
+        "scenarioJavaFiles":{
+          "base": "/home/CIN/hac/mergedataset/mergedataset/antlr4/69ff2669eec265e25721dbc27cb00f6c381d0b41/source/org/antlr/v4/codegen/target/Python3Target/base.java",
+          "left": "/home/CIN/hac/mergedataset/mergedataset/antlr4/69ff2669eec265e25721dbc27cb00f6c381d0b41/source/org/antlr/v4/codegen/target/Python3Target/left.java",
+          "right": "/home/CIN/hac/mergedataset/mergedataset/antlr4/69ff2669eec265e25721dbc27cb00f6c381d0b41/source/org/antlr/v4/codegen/target/Python3Target/right.java",
+          "merge": "/home/CIN/hac/mergedataset/mergedataset/antlr4/69ff2669eec265e25721dbc27cb00f6c381d0b41/source/org/antlr/v4/codegen/target/Python3Target/merge.java"
+        },
+        "targets": {
+          "org.antlr.v4.codegen.target.Python3Target":[
+            "addBadWords()"
+          ]
+        },
+        "scenarioJars": {
+          "base": "/home/CIN/hac/mergedataset/mergedataset/antlr4/69ff2669eec265e25721dbc27cb00f6c381d0b41/original/base/antlr4-4.5.3-SNAPSHOT-jar-with-dependencies.jar",
+          "left": "/home/CIN/hac/mergedataset/mergedataset/antlr4/69ff2669eec265e25721dbc27cb00f6c381d0b41/original/left/antlr4-4.5.3-SNAPSHOT-jar-with-dependencies.jar",
+          "right": "/home/CIN/hac/mergedataset/mergedataset/antlr4/69ff2669eec265e25721dbc27cb00f6c381d0b41/original/right/antlr4-4.5.3-SNAPSHOT-jar-with-dependencies.jar",
+          "merge": "/home/CIN/hac/mergedataset/mergedataset/antlr4/69ff2669eec265e25721dbc27cb00f6c381d0b41/original/merge/antlr4-4.5.3-SNAPSHOT-jar-with-dependencies.jar"
+        
+        },
+        "jarType": "original"
+      },
+      {
+        "projectName": "antlr4",
+        "runAnalysis": true,
+        "scenarioCommits": {
+          "base": "d0fb48c2b89128158950f4b32a61d50d52d981ea",
+          "left": "196c4d591",
+          "right": "99b2d6616",
+          "merge": "69ff2669eec265e25721dbc27cb00f6c381d0b41"
+        },
+        "scenarioJavaFiles":{
+          "base": "/home/CIN/hac/mergedataset/mergedataset/antlr4/69ff2669eec265e25721dbc27cb00f6c381d0b41/source/org/antlr/v4/codegen/target/Python3Target/base.java",
+          "left": "/home/CIN/hac/mergedataset/mergedataset/antlr4/69ff2669eec265e25721dbc27cb00f6c381d0b41/source/org/antlr/v4/codegen/target/Python3Target/left.java",
+          "right": "/home/CIN/hac/mergedataset/mergedataset/antlr4/69ff2669eec265e25721dbc27cb00f6c381d0b41/source/org/antlr/v4/codegen/target/Python3Target/right.java",
+          "merge": "/home/CIN/hac/mergedataset/mergedataset/antlr4/69ff2669eec265e25721dbc27cb00f6c381d0b41/source/org/antlr/v4/codegen/target/Python3Target/merge.java"
+        },
+        "targets": {
+          "org.antlr.v4.codegen.target.Python3Target":[
+            "addBadWords()"
+          ]
+        },
+        "scenarioJars": {
+          "base": "/home/CIN/hac/mergedataset/mergedataset/antlr4/69ff2669eec265e25721dbc27cb00f6c381d0b41/transformed/base/antlr4-4.5.3-SNAPSHOT-jar-with-dependencies.jar",
+          "left": "/home/CIN/hac/mergedataset/mergedataset/antlr4/69ff2669eec265e25721dbc27cb00f6c381d0b41/transformed/left/antlr4-4.5.3-SNAPSHOT-jar-with-dependencies.jar",
+          "right": "/home/CIN/hac/mergedataset/mergedataset/antlr4/69ff2669eec265e25721dbc27cb00f6c381d0b41/transformed/right/antlr4-4.5.3-SNAPSHOT-jar-with-dependencies.jar",
+          "merge": "/home/CIN/hac/mergedataset/mergedataset/antlr4/69ff2669eec265e25721dbc27cb00f6c381d0b41/transformed/merge/antlr4-4.5.3-SNAPSHOT-jar-with-dependencies.jar"
+        
+        },
+        "jarType": "transformed"
+      }
+]

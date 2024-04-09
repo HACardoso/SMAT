@@ -55,7 +55,7 @@ class RandoopTestSuiteGenerator(TestSuiteGenerator):
         with open(filename, 'w') as f:
             for fqcn, methods in targets.items():
                 for method in methods:
-                    method_signature = method
+                    method_signature = fqcn + "." + method
                     f.write(method_signature)
 
         return filename
