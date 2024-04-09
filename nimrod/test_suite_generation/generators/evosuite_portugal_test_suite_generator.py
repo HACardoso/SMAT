@@ -24,7 +24,7 @@ class EvosuitePortugalTestSuiteGenerator(TestSuiteGenerator):
             '-Dregressioncp',scenario.scenario_jars.left ,
             '-Dsecond_regressioncp', scenario.scenario_jars.right,
             '-criterion=METHODCALL',
-            #-criterion=LINE:BRANCH:EXCEPTION:WEAKMUTATION:OUTPUT:METHOD:METHODNOEXCEPTION:CBRANCH:METHODCALL
+            #'-criterion=LINE:BRANCH:EXCEPTION:WEAKMUTATION:OUTPUT:METHOD:METHODNOEXCEPTION:CBRANCH:METHODCALL',
             '-Dtest_factory=MULTI_TEST',
             '-Dassertion_strategy=SPECIFIC',
             '-Ddistance_threshold=0.05',
@@ -44,10 +44,10 @@ class EvosuitePortugalTestSuiteGenerator(TestSuiteGenerator):
                        f"-seed={self.SEED}", f'-Dsearch_budget={self.DETERMINISTIC_TESTS_QUANTITY}']
           else:
             params += [f'-Dsearch_budget={self.SEARCH_TIME_AVAILABLE}']
-#
+
           if(len(methods) > 0):
             params.append(
-                f'-Dcover_methods="{self._create_method_list(methods)}"')
+                f'-Dcover_methods="{self._create_method_list(class_name, methods)}"')
 
           self._java.exec_java(output_path, self._java.get_env(), 3000, *tuple(params))
 
@@ -80,9 +80,9 @@ class EvosuitePortugalTestSuiteGenerator(TestSuiteGenerator):
         return super()._compile_test_suite(input_jar, output_path, [EVOSUITE_PORTUGAL] + extra_class_path)
 
 
-    def _create_method_list(self, methods: "List[str]"):
+    def _create_method_list(self,class_name: str, methods: "List[str]"):
         rectified_methods = [self._convert_method_signature(
-            method) for method in methods]
+            class_name + method) for method in methods]
         return (":").join(rectified_methods)
 
 

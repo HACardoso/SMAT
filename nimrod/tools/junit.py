@@ -124,7 +124,6 @@ class JUnit:
 
     @staticmethod
     def _extract_test_id(output):
-        f = open("nimrod/test_suite_generation/logging_file.txt","a")
         tests_fail = set()
         tests_not_executed = set()
         tests_fail_with_files = set()
@@ -141,17 +140,14 @@ class JUnit:
             if len(i) > 0:
                 if ((is_failed_caused_by_compilation_problem(test_case, output) == True)):
                     logging.debug("\n*** ERROR: test case "+test_case+" was not executable in project version. \n")
-                    f.write("DEBUG junit - \n*** ERROR: test case "+test_case+" was not executable in project version. \n")
                     tests_not_executed_with_files.add('{0}#{1}'.format(file, test_case, int(i[-1])))
                     tests_not_executed.add(test_case)
                 elif ((is_failed_caused_by_error(test_case, output) == True)):
                     logging.debug("\n*** ERROR: test case "+test_case+" with error \n")
-                    f.write("DEBUG junit - \n*** ERROR: test case "+test_case+" with error \n")
                     tests_not_executed_with_files.add('{0}#{1}'.format(file, test_case, int(i[-1])))
                     tests_not_executed.add(test_case)
                 else:
                     logging.debug("\n*** Failed: test case " + test_case + ". \n")
-                    f.write("DEBUG junit - \n*** Failed: test case " + test_case + ". \n")
                     tests_fail_with_files.add('{0}#{1}'.format(file, test_case, int(i[-1])))
                     tests_fail.add(test_case)
             else:
@@ -161,7 +157,6 @@ class JUnit:
             if not ('test'+str(i) in tests_fail) and not ('test'+str(i) in tests_not_executed):
                 value = 'test'+str(i)
                 executed_tests.add(value)
-        f.close()
         return tests_fail, tests_not_executed, executed_tests, tests_fail_with_files, tests_not_executed_with_files
 
     def run_with_mutant(self, suite, sut_class, mutant_dir, cov_original=True,

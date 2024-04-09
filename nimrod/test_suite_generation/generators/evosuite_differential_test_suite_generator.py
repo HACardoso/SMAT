@@ -9,7 +9,7 @@ class EvosuiteDifferentialTestSuiteGenerator(EvosuiteTestSuiteGenerator):
     def get_generator_tool_name(self) -> str:
         return "EVOSUITE_DIFFERENTIAL"
 
-    def _execute_tool_for_tests_generation(self, input_jar: str, output_path: str, scenario: MergeScenarioUnderAnalysis, use_determinism: bool) -> None:
+    def _execute_tool_for_tests_generation(self, input_jar: str, output_path: str, scenario: MergeScenarioUnderAnalysis, use_determinism: bool, seed: int) -> None:
         for class_name, methods in scenario.targets.items():
           logging.debug(f"Starting generation for class {class_name}")
           params = [
@@ -22,6 +22,7 @@ class EvosuiteDifferentialTestSuiteGenerator(EvosuiteTestSuiteGenerator):
               '-Dminimize=false',
               '-Djunit_check=false',
               '-Dinline=false',
+              f'-seed={seed}'
           ]
           
           if use_determinism:
@@ -32,6 +33,6 @@ class EvosuiteDifferentialTestSuiteGenerator(EvosuiteTestSuiteGenerator):
 
           if(len(methods) > 0):
             params.append(
-                f'-Dtarget_method_list="{self._create_method_list(methods)}"')
+                f'-Dtarget_method_list="{self._create_method_list(class_name,methods)}"')
 
           self._java.exec_java(output_path, self._java.get_env(), 3000, *tuple(params))

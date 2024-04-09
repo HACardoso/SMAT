@@ -13,7 +13,7 @@ class ProjectTestSuiteGenerator(TestSuiteGenerator):
     def get_generator_tool_name(self) -> str:
         return "PROJECT_TEST"
     
-    def generate_and_compile_test_suite(self, scenario: MergeScenarioUnderAnalysis, input_jar: str, use_determinism: bool) -> TestSuite:
+    def generate_and_compile_test_suite(self, scenario: MergeScenarioUnderAnalysis, input_jar: str, use_determinism: bool, seed: int) -> TestSuite:
         merge_jar_test_path = scenario.scenario_jars.merge[:scenario.scenario_jars.merge.rfind("-")] + "-TestFiles.jar"
         project_test_suite_path = merge_jar_test_path[:merge_jar_test_path.rfind(os.sep)]
 

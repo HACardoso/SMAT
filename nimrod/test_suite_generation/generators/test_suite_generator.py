@@ -25,28 +25,22 @@ class TestSuiteGenerator(ABC):
         self._java = java
 
     def generate_and_compile_test_suite(self, scenario: MergeScenarioUnderAnalysis, input_jar: str, use_determinism: bool, seed: int) -> TestSuite:
-        f = open("nimrod/test_suite_generation/logging_file.txt","a")
         if use_determinism:
             logging.debug('Using deterministic test suite generation')
             
-        suite_dir = self.get_generator_tool_name() + "_" + str(int(seed))
+        suite_dir = self.get_generator_tool_name() + "_" + scenario.jar_type + "_" + str(int(seed))
         test_suite_path = path.join(get_base_output_path(), scenario.project_name, scenario.scenario_commits.merge[:6], suite_dir)
 
         makedirs(test_suite_path, exist_ok=True)
         makedirs(path.join(test_suite_path, "classes"), exist_ok=True)
 
         logging.info(f"Starting generation with {self.get_generator_tool_name()}")
-        f.write("INFO test_suite_generator - Starting generation with "+str(self.get_generator_tool_name())+"\n")
         self._execute_tool_for_tests_generation(input_jar, test_suite_path, scenario, use_determinism, seed)
         logging.info(f"Finished generation with {self.get_generator_tool_name()}")
-        f.write("INFO test_suite_generator - Finished generation with "+str(self.get_generator_tool_name())+"\n")
 
         logging.info(f"Starting compilation for suite generated with {self.get_generator_tool_name()}")
-        f.write("INFO test_suite_generator - Starting compilation for suite generated with "+str(self.get_generator_tool_name())+"\n")
         tests_class_path = self._compile_test_suite(input_jar, test_suite_path)
         logging.info(f"Finished compilation for suite generated with {self.get_generator_tool_name()}")
-        f.write("INFO test_suite_generator - Finished compilation for suite generated with "+str(self.get_generator_tool_name())+"\n")
-        f.close()
         return TestSuite(
             generator_name=self.get_generator_tool_name(),
             class_path=tests_class_path,

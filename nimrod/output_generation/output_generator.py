@@ -7,10 +7,24 @@ from typing import TypeVar, Generic
 from nimrod.output_generation.output_generator_context import OutputGeneratorContext
 from nimrod.tests.utils import get_base_output_path
 
+import re
+
 T = TypeVar("T")
 
 
 class OutputGenerator(ABC, Generic[T]):
+    #env_config_file = open('nimrod/tests/env-config.json')
+    #env_config_json = json.load(env_config_file)
+    #project_file = open(env_config_json['input_path'])
+    #project_json = json.load(project_file)
+    #project_name = project_json[0]['projectName']
+    #merge_commit = project_json[0]['scenarioCommits']['merge'][:4]
+    #target = list(project_json[0]['targets'].values())[0][0]
+    #target_method = re.findall(r'\.[a-zA-Z]+\(', target)[0][1:-1]
+#
+    #env_config_file.close()
+    #project_file.close()
+
     REPORTS_DIRECTORY = path.join(get_base_output_path(), "reports")
 
     def __init__(self, report_name: str) -> None:

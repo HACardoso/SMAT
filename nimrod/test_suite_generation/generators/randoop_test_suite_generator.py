@@ -20,14 +20,15 @@ class RandoopTestSuiteGenerator(TestSuiteGenerator):
     def get_generator_tool_name(self) -> str:
         return self._randoop_version
 
-    def _execute_tool_for_tests_generation(self, input_jar: str, output_path: str, scenario: MergeScenarioUnderAnalysis, use_determinism: bool) -> None:
+    def _execute_tool_for_tests_generation(self, input_jar: str, output_path: str, scenario: MergeScenarioUnderAnalysis, use_determinism: bool, seed: int) -> None:
         params = [
             '-classpath', generate_classpath([input_jar, self._randoop_jar]),
             'randoop.main.Main',
             'gentests',
             '--junit-output-dir=' + output_path,
             f'--classlist={self._generate_target_classes_file(output_path, scenario.targets)}',
-            f'--methodlist={self._generate_target_methods_file(output_path, scenario.targets)}'
+            f'--methodlist={self._generate_target_methods_file(output_path, scenario.targets)}',
+            f'--randomseed={seed}'
         ]
         print(params)
         if use_determinism:
@@ -54,7 +55,7 @@ class RandoopTestSuiteGenerator(TestSuiteGenerator):
         with open(filename, 'w') as f:
             for fqcn, methods in targets.items():
                 for method in methods:
-                    method_signature = fqcn + "." + method
+                    method_signature = method
                     f.write(method_signature)
 
         return filename

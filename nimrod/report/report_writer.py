@@ -5,6 +5,13 @@ class Report_Writer:
     def write_methods_and_objects_report(self, path_suite_original, path_suite_modified, methods, objects):
         suites_path = path_suite_original[:path_suite_original.rfind("/")]  # Get the directory where the test suites are
         reports_path = suites_path + "/reports"
+        print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+        print("Path suite original: ", path_suite_original)
+        print("Path suite modified: ", path_suite_modified)
+        print("Methods: ",methods)
+        print("Objeacts: ", objects)
+        print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+
 
         if os.path.isdir(reports_path) is False:
             os.mkdir(reports_path)

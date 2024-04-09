@@ -42,7 +42,7 @@ class EvosuiteTestSuiteGenerator(TestSuiteGenerator):
 
           if(len(methods) > 0):
             params.append(
-                f'-Dtarget_method_list="{self._create_method_list(methods)}"')
+                f'-Dtarget_method_list="{self._create_method_list(class_name, methods)}"')
 
           self._java.exec_java(output_path, self._java.get_env(), 3000, *tuple(params))
 
@@ -74,9 +74,9 @@ class EvosuiteTestSuiteGenerator(TestSuiteGenerator):
         return super()._compile_test_suite(input_jar, output_path, [EVOSUITE] + extra_class_path)
 
 
-    def _create_method_list(self, methods: "List[str]"):
+    def _create_method_list(self,class_name: str, methods: "List[str]"):
         rectified_methods = [self._convert_method_signature(
-            method) for method in methods]
+            class_name + method) for method in methods]
         return (":").join(rectified_methods)
 
 

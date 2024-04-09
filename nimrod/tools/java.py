@@ -84,10 +84,7 @@ class Java:
 
             if len(args) == 1:
                 logging.debug(f"Starting execution of java command: {' '.join(command)}")
-                f = open("nimrod/test_suite_generation/logging_file.txt","a")
-                f.write("DEBUG java - Starting execution of java command: "+str(''.join(command))+"\n")
                 #subprocess.run(command)
-                f.close()
                 return subprocess.check_output(command, 
                                                cwd=cwd,
                                                env=env,
@@ -97,15 +94,7 @@ class Java:
                                                )
             else:
                 logging.debug(f"Starting execution of java command: {' '.join(command)}"),
-                f = open("nimrod/test_suite_generation/logging_file.txt","a")
-                f.write("DEBUG java - Starting execution of java command: "+str(''.join(command))+"\n")
-                f.close()
                 #subprocess.run(command)
-                print("Command: ",command)
-                print("CWD: ", cwd)
-                print("ENV: ", env)
-                print("Timeout: ", timeout)
-                print("STDERR: ", subprocess.STDOUT)
                 return subprocess.check_output(command, 
                                                cwd=cwd,
                                                env=env,
@@ -118,22 +107,13 @@ class Java:
             raise e
         except RuntimeError as e:
             logging.error(e)
-            f = open("nimrod/test_suite_generation/logging_file.txt","a")
-            f.write("ERROR java - "+str(e)+"\n")
-            f.close()
             RuntimeError("command '{}' return with error (code {}): {}".format(e.cmd, e.returncode, e.output))
             raise e
         except subprocess.TimeoutExpired as e:
             logging.error(e)
-            f = open("nimrod/test_suite_generation/logging_file.txt","a")
-            f.write("ERROR java - "+str(e)+"\n")
-            f.close
             raise e
         except FileNotFoundError as e:
             logging.error('[ERROR] {0}: not found.'.format(program))
-            f = open("nimrod/test_suite_generation/logging_file.txt","a")
-            f.write("ERROR java -  [ERROR] "+str(program)+": not found\n")
-            f.close()
             raise e
             
 
