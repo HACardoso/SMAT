@@ -31,7 +31,8 @@ class Project_dependecies:
         self.path_output_csv = self.config["path_output_csv"]
 
     def create_directory_test_destination(self):
-        env_config_file = open('nimrod/tests/env-config.json')
+        #env_config_file = open('nimrod/tests/env-config.json')
+        env_config_file = open(os.environ("CONFIG_FILE"))
         env_config_json = json.load(env_config_file)
         project_file = open(env_config_json['input_path'])
         project_json = json.load(project_file)

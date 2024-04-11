@@ -10,8 +10,11 @@ PATH = os.path.dirname(os.path.abspath(__file__))
 def get_config() -> "Dict[str, str]":
     config: "Dict[str, str]" = dict()
 
-    with open(os.path.join(PATH, os.sep.join(['env-config.json'])), 'r') as j:
+    #with open(os.path.join(PATH, os.sep.join(['env-config.json'])), 'r') as j:
+    #    config = json.loads(j.read())
+    with open('nimrod/tests/config_files/' + os.environ["CONFIG_FILE"],'r') as j:
         config = json.loads(j.read())
+
 
     return config
 
