@@ -40,11 +40,15 @@ class Project_dependecies:
         merge_commit = project_json[0]['scenarioCommits']['merge'][:4]
         target = list(project_json[0]['targets'].values())[0][0]
         target_method = re.findall(r'\.[a-zA-Z]+\(', target)[0][1:-1]
+        if len(env_config_json['test_suite_generators']) > 1:
+            length = 'multiple'
+        else:
+            length = 'single'
 
         env_config_file.close()
         project_file.close()
 
-        path_directory = os.getcwd().replace("/nimrod/proj","/")+'output-test-dest_' + project_name + '_' + merge_commit + "_" + target_method if os.getcwd().__contains__("/nimrod/proj") else os.getcwd() + "/output-test-dest_" + project_name + '_' + merge_commit + "_" + target_method
+        path_directory = os.getcwd().replace("/nimrod/proj","/")+'output-test-dest_' + project_name + '_' + merge_commit + "_" + target_method + '_' + length if os.getcwd().__contains__("/nimrod/proj") else os.getcwd() + "/output-test-dest_" + project_name + '_' + merge_commit + "_" + target_method + '_' + length
         if (os.path.isdir(path_directory) == False):
             os.mkdir(path_directory)
         return path_directory
