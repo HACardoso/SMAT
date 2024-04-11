@@ -16,6 +16,10 @@ PATH = os.path.dirname(os.path.abspath(__file__))
 class OutputGenerator(ABC, Generic[T]):
     env_config_file = open('nimrod/tests/config_files/' + os.environ['CONFIG_FILE'])
     env_config_json = json.load(env_config_file)
+    if len(env_config_json['test_suite_generators']) > 1:
+        test_suites = 'multiple'
+    else:
+        test_suites = 'single'
     project_file = open(env_config_json['input_path'])
     project_json = json.load(project_file)
     project_name = project_json[0]['projectName']
@@ -26,7 +30,7 @@ class OutputGenerator(ABC, Generic[T]):
     #env_config_file.close()
     #project_file.close()
 
-    REPORTS_DIRECTORY = path.join(get_base_output_path(), "reports_" + project_name)
+    REPORTS_DIRECTORY = path.join(get_base_output_path(), "reports_" + project_name + '_' + test_suites)
 
     def __init__(self, report_name: str) -> None:
         super().__init__()
