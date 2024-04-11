@@ -1,9 +1,10 @@
 from abc import ABC, abstractmethod
 import logging
 from os import makedirs, path
+import os
 from time import time
 from typing import List
-
+import json
 from nimrod.tests.utils import get_config
 from nimrod.core.merge_scenario_under_analysis import MergeScenarioUnderAnalysis
 from nimrod.tests.utils import get_base_output_path
@@ -27,8 +28,15 @@ class TestSuiteGenerator(ABC):
     def generate_and_compile_test_suite(self, scenario: MergeScenarioUnderAnalysis, input_jar: str, use_determinism: bool, seed: int) -> TestSuite:
         if use_determinism:
             logging.debug('Using deterministic test suite generation')
-            
-        suite_dir = self.get_generator_tool_name() + "_" + scenario.jar_type + "_" + str(int(seed))
+
+        env_config_file = open('nimrod/tests/config_files/' + os.environ['CONFIG_FILE'])
+        env_config_json = json.load(env_config_file)
+        if len(env_config_json['test_suite_generators']) > 1:
+            test_suites = 'multiple'
+        else:
+            test_suites = 'single'
+
+        suite_dir = self.get_generator_tool_name() + "_" + scenario.jar_type + "_" + str(int(seed)) + "_" + test_suites
         test_suite_path = path.join(get_base_output_path(), scenario.project_name, scenario.scenario_commits.merge[:6], suite_dir)
 
         makedirs(test_suite_path, exist_ok=True)

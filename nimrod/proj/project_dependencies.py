@@ -48,7 +48,7 @@ class Project_dependecies:
         env_config_file.close()
         project_file.close()
 
-        path_directory = os.getcwd().replace("/nimrod/proj","/")+'output-test-dest_' + project_name + '_' + merge_commit + "_" + target_method + '_' + length if os.getcwd().__contains__("/nimrod/proj") else os.getcwd() + "/output-test-dest_" + project_name + '_' + merge_commit + "_" + target_method + '_' + length
+        path_directory = os.getcwd().replace("/nimrod/proj","/")+'output-test-dest_' + project_name + "_" + merge_commit + "_" + target_method + "_" + length if os.getcwd().__contains__("/nimrod/proj") else os.getcwd() + "/output-test-dest_" + project_name + '_' + merge_commit + "_" + target_method + "_" + length
         if (os.path.isdir(path_directory) == False):
             os.mkdir(path_directory)
         return path_directory
