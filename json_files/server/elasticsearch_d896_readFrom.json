@@ -1,0 +1,60 @@
+[
+    {
+        "projectName": "elasticsearch",
+        "runAnalysis": true,
+        "scenarioCommits": {
+          "base": "0a8afa2e7269ddbec3755b8f10033e93f55149c2",
+          "left": "90ef933404ae1d8aeaab97d9c0ab6925ee22add1",
+          "right": "be168f528bbffcbc026fe427869c8e458d275156",
+          "merge": "d896886973660785aac45275ddb110c1a6babc57"
+        },
+        "scenarioJavaFiles":{
+          "base": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/d896886973660785aac45275ddb110c1a6babc57/source/org/elasticsearch/action/DocWriteResponse/base.java",
+          "left": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/d896886973660785aac45275ddb110c1a6babc57/source/org/elasticsearch/action/DocWriteResponse/left.java",
+          "right": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/d896886973660785aac45275ddb110c1a6babc57/source/org/elasticsearch/action/DocWriteResponse/right.java",
+          "merge": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/d896886973660785aac45275ddb110c1a6babc57/source/org/elasticsearch/action/DocWriteResponse/merge.java"
+        },
+        "targets": {
+          "org.elasticsearch.action.DocWriteResponse":[
+            "readFrom(org.elasticsearch.common.io.stream.StreamInput)"
+          ]
+        },
+        "scenarioJars": {
+          "base": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/d896886973660785aac45275ddb110c1a6babc57/original/base/core-all-5.0.0-SNAPSHOT.jar",
+          "left": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/d896886973660785aac45275ddb110c1a6babc57/original/left/core-all-5.0.0-SNAPSHOT.jar",
+          "right": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/d896886973660785aac45275ddb110c1a6babc57/original/right/core-all-5.0.0-SNAPSHOT.jar",
+          "merge": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/d896886973660785aac45275ddb110c1a6babc57/original/merge/core-all-5.0.0-SNAPSHOT.jar"
+        
+        },
+        "jarType": "original"
+      },
+      {
+        "projectName": "elasticsearch",
+        "runAnalysis": true,
+        "scenarioCommits": {
+          "base": "0a8afa2e7269ddbec3755b8f10033e93f55149c2",
+          "left": "90ef933404ae1d8aeaab97d9c0ab6925ee22add1",
+          "right": "be168f528bbffcbc026fe427869c8e458d275156",
+          "merge": "d896886973660785aac45275ddb110c1a6babc57"
+        },
+        "scenarioJavaFiles":{
+          "base": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/d896886973660785aac45275ddb110c1a6babc57/source/org/elasticsearch/action/DocWriteResponse/base.java",
+          "left": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/d896886973660785aac45275ddb110c1a6babc57/source/org/elasticsearch/action/DocWriteResponse/left.java",
+          "right": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/d896886973660785aac45275ddb110c1a6babc57/source/org/elasticsearch/action/DocWriteResponse/right.java",
+          "merge": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/d896886973660785aac45275ddb110c1a6babc57/source/org/elasticsearch/action/DocWriteResponse/merge.java"
+        },
+        "targets": {
+          "org.elasticsearch.action.DocWriteResponse":[
+            "readFrom(org.elasticsearch.common.io.stream.StreamInput)"
+          ]
+        },
+        "scenarioJars": {
+          "base": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/d896886973660785aac45275ddb110c1a6babc57/transformed/base/core-all-5.0.0-SNAPSHOT.jar",
+          "left": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/d896886973660785aac45275ddb110c1a6babc57/transformed/left/core-all-5.0.0-SNAPSHOT.jar",
+          "right": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/d896886973660785aac45275ddb110c1a6babc57/transformed/right/core-all-5.0.0-SNAPSHOT.jar",
+          "merge": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/d896886973660785aac45275ddb110c1a6babc57/transformed/merge/core-all-5.0.0-SNAPSHOT.jar"
+        
+        },
+        "jarType": "transformed"
+      }
+]

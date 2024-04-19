@@ -36,8 +36,11 @@ class TestSuiteGenerator(ABC):
         else:
             test_suites = 'single'
 
+        for key in scenario.targets:
+            method_name = scenario.targets[key]
+
         suite_dir = self.get_generator_tool_name() + "_" + scenario.jar_type + "_" + str(int(seed)) + "_" + test_suites
-        test_suite_path = path.join(get_base_output_path(), scenario.project_name, scenario.scenario_commits.merge[:6], suite_dir)
+        test_suite_path = path.join(get_base_output_path(), scenario.project_name, scenario.scenario_commits.merge[:6],method_name[0], suite_dir)
 
         makedirs(test_suite_path, exist_ok=True)
         makedirs(path.join(test_suite_path, "classes"), exist_ok=True)

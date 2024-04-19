@@ -1,0 +1,60 @@
+[
+    {
+        "projectName": "elasticsearch",
+        "runAnalysis": true,
+        "scenarioCommits": {
+          "base": "2336da1704627c236e6eca214614e748d195794d",
+          "left": "8757af2d928",
+          "right": "8ff1efbcf05",
+          "merge": "59cb67c7bd0ab6311115b20954e013412b676b29"
+        },
+        "scenarioJavaFiles":{
+          "base": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/59cb67c7bd0ab6311115b20954e013412b676b29/source/org/elasticsearch/index/query/support/NestedInnerQueryParseSupport/base.java",
+          "left": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/59cb67c7bd0ab6311115b20954e013412b676b29/source/org/elasticsearch/index/query/support/NestedInnerQueryParseSupport/left.java",
+          "right": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/59cb67c7bd0ab6311115b20954e013412b676b29/source/org/elasticsearch/index/query/support/NestedInnerQueryParseSupport/right.java",
+          "merge": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/59cb67c7bd0ab6311115b20954e013412b676b29/source/org/elasticsearch/index/query/support/NestedInnerQueryParseSupport/merge.java"
+        },
+        "targets": {
+          "org.elasticsearch.index.query.support.NestedInnerQueryParseSupport":[
+            "setPathLevel()"
+          ]
+        },
+        "scenarioJars": {
+          "base": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/59cb67c7bd0ab6311115b20954e013412b676b29/original/base/elasticsearch-2.1.0-jar-with-dependencies.jar",
+          "left": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/59cb67c7bd0ab6311115b20954e013412b676b29/original/left/elasticsearch-2.1.0-jar-with-dependencies.jar",
+          "right": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/59cb67c7bd0ab6311115b20954e013412b676b29/original/right/elasticsearch-2.1.0-jar-with-dependencies.jar",
+          "merge": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/59cb67c7bd0ab6311115b20954e013412b676b29/original/merge/elasticsearch-2.1.0-jar-with-dependencies.jar"
+        
+        },
+        "jarType": "original"
+      },
+      {
+        "projectName": "elasticsearch",
+        "runAnalysis": true,
+        "scenarioCommits": {
+          "base": "2336da1704627c236e6eca214614e748d195794d",
+          "left": "8757af2d928",
+          "right": "8ff1efbcf05",
+          "merge": "59cb67c7bd0ab6311115b20954e013412b676b29"
+        },
+        "scenarioJavaFiles":{
+          "base": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/59cb67c7bd0ab6311115b20954e013412b676b29/source/org/elasticsearch/index/query/support/NestedInnerQueryParseSupport/base.java",
+          "left": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/59cb67c7bd0ab6311115b20954e013412b676b29/source/org/elasticsearch/index/query/support/NestedInnerQueryParseSupport/left.java",
+          "right": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/59cb67c7bd0ab6311115b20954e013412b676b29/source/org/elasticsearch/index/query/support/NestedInnerQueryParseSupport/right.java",
+          "merge": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/59cb67c7bd0ab6311115b20954e013412b676b29/source/org/elasticsearch/index/query/support/NestedInnerQueryParseSupport/merge.java"
+        },
+        "targets": {
+          "org.elasticsearch.index.query.support.NestedInnerQueryParseSupport":[
+            "setPathLevel()"
+          ]
+        },
+        "scenarioJars": {
+          "base": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/59cb67c7bd0ab6311115b20954e013412b676b29/transformed/base/elasticsearch-2.1.0-jar-with-dependencies.jar",
+          "left": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/59cb67c7bd0ab6311115b20954e013412b676b29/transformed/left/elasticsearch-2.1.0-jar-with-dependencies.jar",
+          "right": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/59cb67c7bd0ab6311115b20954e013412b676b29/transformed/right/elasticsearch-2.1.0-jar-with-dependencies.jar",
+          "merge": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/59cb67c7bd0ab6311115b20954e013412b676b29/transformed/merge/elasticsearch-2.1.0-jar-with-dependencies.jar"
+        
+        },
+        "jarType": "transformed"
+      }
+]

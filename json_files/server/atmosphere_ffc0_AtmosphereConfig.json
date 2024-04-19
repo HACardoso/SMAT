@@ -1,0 +1,60 @@
+[
+    {
+        "projectName": "atmosphere",
+        "runAnalysis": true,
+        "scenarioCommits": {
+          "base": "d072d5d4b3ce20c715bad64b9303189d4726fecc",
+          "left": "95e310c5cf",
+          "right": "41d97a409b",
+          "merge": "ffc0c6e274094c6423e29d1c45bab1593b8fac7d"
+        },
+        "scenarioJavaFiles":{
+          "base": "/home/CIN/hac/mergedataset/mergedataset/atmosphere/ffc0c6e274094c6423e29d1c45bab1593b8fac7d/source/org/atmosphere/cpr/AtmosphereConfig/base.java",
+          "left": "/home/CIN/hac/mergedataset/mergedataset/atmosphere/ffc0c6e274094c6423e29d1c45bab1593b8fac7d/source/org/atmosphere/cpr/AtmosphereConfig/left.java",
+          "right": "/home/CIN/hac/mergedataset/mergedataset/atmosphere/ffc0c6e274094c6423e29d1c45bab1593b8fac7d/source/org/atmosphere/cpr/AtmosphereConfig/right.java",
+          "merge": "/home/CIN/hac/mergedataset/mergedataset/atmosphere/ffc0c6e274094c6423e29d1c45bab1593b8fac7d/source/org/atmosphere/cpr/AtmosphereConfig/merge.java"
+        },
+        "targets": {
+          "org.atmosphere.cpr.AtmosphereConfig":[
+            "AtmosphereConfig(AtmosphereFramework)"
+          ]
+        },
+        "scenarioJars": {
+          "base": "/home/CIN/hac/mergedataset/mergedataset/atmosphere/ffc0c6e274094c6423e29d1c45bab1593b8fac7d/original/base/atmosphere-runtime-2.3.0-SNAPSHOT-fat-tests.jar",
+          "left": "/home/CIN/hac/mergedataset/mergedataset/atmosphere/ffc0c6e274094c6423e29d1c45bab1593b8fac7d/original/left/atmosphere-runtime-2.3.0-SNAPSHOT-fat-tests.jar",
+          "right": "/home/CIN/hac/mergedataset/mergedataset/atmosphere/ffc0c6e274094c6423e29d1c45bab1593b8fac7d/original/right/atmosphere-runtime-2.3.0-SNAPSHOT-fat-tests.jar",
+          "merge": "/home/CIN/hac/mergedataset/mergedataset/atmosphere/ffc0c6e274094c6423e29d1c45bab1593b8fac7d/original/merge/atmosphere-runtime-2.3.0-SNAPSHOT-fat-tests.jar"
+        
+        },
+        "jarType": "original"
+      },
+      {
+        "projectName": "atmosphere",
+        "runAnalysis": true,
+        "scenarioCommits": {
+          "base": "d072d5d4b3ce20c715bad64b9303189d4726fecc",
+          "left": "95e310c5cf",
+          "right": "41d97a409b",
+          "merge": "ffc0c6e274094c6423e29d1c45bab1593b8fac7d"
+        },
+        "scenarioJavaFiles":{
+          "base": "/home/CIN/hac/mergedataset/mergedataset/atmosphere/ffc0c6e274094c6423e29d1c45bab1593b8fac7d/source/org/atmosphere/cpr/AtmosphereConfig/base.java",
+          "left": "/home/CIN/hac/mergedataset/mergedataset/atmosphere/ffc0c6e274094c6423e29d1c45bab1593b8fac7d/source/org/atmosphere/cpr/AtmosphereConfig/left.java",
+          "right": "/home/CIN/hac/mergedataset/mergedataset/atmosphere/ffc0c6e274094c6423e29d1c45bab1593b8fac7d/source/org/atmosphere/cpr/AtmosphereConfig/right.java",
+          "merge": "/home/CIN/hac/mergedataset/mergedataset/atmosphere/ffc0c6e274094c6423e29d1c45bab1593b8fac7d/source/org/atmosphere/cpr/AtmosphereConfig/merge.java"
+        },
+        "targets": {
+          "org.atmosphere.cpr.AtmosphereConfig":[
+            "AtmosphereConfig(AtmosphereFramework)"
+          ]
+        },
+        "scenarioJars": {
+          "base": "/home/CIN/hac/mergedataset/mergedataset/atmosphere/ffc0c6e274094c6423e29d1c45bab1593b8fac7d/transformed/base/atmosphere-runtime-2.3.0-SNAPSHOT-fat-tests.jar",
+          "left": "/home/CIN/hac/mergedataset/mergedataset/atmosphere/ffc0c6e274094c6423e29d1c45bab1593b8fac7d/transformed/left/atmosphere-runtime-2.3.0-SNAPSHOT-fat-tests.jar",
+          "right": "/home/CIN/hac/mergedataset/mergedataset/atmosphere/ffc0c6e274094c6423e29d1c45bab1593b8fac7d/transformed/right/atmosphere-runtime-2.3.0-SNAPSHOT-fat-tests.jar",
+          "merge": "/home/CIN/hac/mergedataset/mergedataset/atmosphere/ffc0c6e274094c6423e29d1c45bab1593b8fac7d/transformed/merge/atmosphere-runtime-2.3.0-SNAPSHOT-fat-tests.jar"
+        
+        },
+        "jarType": "transformed"
+      }
+]

@@ -1,0 +1,58 @@
+[{
+    "projectName": "HikariCP",
+    "runAnalysis": true,
+    "scenarioCommits": {
+      "base": "9eb405e5b81082044daca981b2655396c4e9a6eb",
+      "left": "da5c0268",
+      "right": "b4510a50",
+      "merge": "1bca94af9ec625f21d1b58ff10efb5be71ab87a6"
+    },
+    "scenarioJavaFiles":{
+      "base": "/home/CIN/hac/mergedataset/mergedataset/HikariCP/1bca94af9ec625f21d1b58ff10efb5be71ab87a6/source/com/zaxxer/hikari/HikariConfig/base.java",
+      "left": "/home/CIN/hac/mergedataset/mergedataset/HikariCP/1bca94af9ec625f21d1b58ff10efb5be71ab87a6/source/com/zaxxer/hikari/HikariConfig/left.java",
+      "right": "/home/CIN/hac/mergedataset/mergedataset/HikariCP/1bca94af9ec625f21d1b58ff10efb5be71ab87a6/source/com/zaxxer/hikari/HikariConfig/right.java",
+      "merge": "/home/CIN/hac/mergedataset/mergedataset/HikariCP/1bca94af9ec625f21d1b58ff10efb5be71ab87a6/source/com/zaxxer/hikari/HikariConfig/merge.java"
+    },
+    "targets": {
+      "com.zaxxer.hikari.HikariConfig":[
+        "validate()"
+      ]
+    },
+    "scenarioJars": {
+      "base": "/home/CIN/hac/mergedataset/mergedataset/HikariCP/1bca94af9ec625f21d1b58ff10efb5be71ab87a6/original/base/HikariCP-1.3.4-SNAPSHOT-jar-with-dependencies.jar",
+      "left": "/home/CIN/hac/mergedataset/mergedataset/HikariCP/1bca94af9ec625f21d1b58ff10efb5be71ab87a6/original/left/HikariCP-1.3.4-SNAPSHOT-jar-with-dependencies.jar",
+      "right": "/home/CIN/hac/mergedataset/mergedataset/HikariCP/1bca94af9ec625f21d1b58ff10efb5be71ab87a6/original/right/HikariCP-1.3.4-SNAPSHOT-jar-with-dependencies.jar",
+      "merge": "/home/CIN/hac/mergedataset/mergedataset/HikariCP/1bca94af9ec625f21d1b58ff10efb5be71ab87a6/original/merge/HikariCP-1.3.4-SNAPSHOT-jar-with-dependencies.jar"
+    
+    },
+    "jarType": "original"
+  },
+  {
+    "projectName": "HikariCP",
+    "runAnalysis": true,
+    "scenarioCommits": {
+      "base": "9eb405e5b81082044daca981b2655396c4e9a6eb",
+      "left": "da5c0268",
+      "right": "b4510a50",
+      "merge": "1bca94af9ec625f21d1b58ff10efb5be71ab87a6"
+    },
+    "scenarioJavaFiles":{
+      "base": "/home/CIN/hac/mergedataset/mergedataset/HikariCP/1bca94af9ec625f21d1b58ff10efb5be71ab87a6/source/com/zaxxer/hikari/HikariConfig/base.java",
+      "left": "/home/CIN/hac/mergedataset/mergedataset/HikariCP/1bca94af9ec625f21d1b58ff10efb5be71ab87a6/source/com/zaxxer/hikari/HikariConfig/left.java",
+      "right": "/home/CIN/hac/mergedataset/mergedataset/HikariCP/1bca94af9ec625f21d1b58ff10efb5be71ab87a6/source/com/zaxxer/hikari/HikariConfig/right.java",
+      "merge": "/home/CIN/hac/mergedataset/mergedataset/HikariCP/1bca94af9ec625f21d1b58ff10efb5be71ab87a6/source/com/zaxxer/hikari/HikariConfig/merge.java"
+    },
+    "targets": {
+      "com.zaxxer.hikari.HikariConfig":[
+        "validate()"
+      ]
+    },
+    "scenarioJars": {
+      "base": "/home/CIN/hac/mergedataset/mergedataset/HikariCP/1bca94af9ec625f21d1b58ff10efb5be71ab87a6/transformed/base/HikariCP-1.3.4-SNAPSHOT-jar-with-dependencies.jar",
+      "left": "/home/CIN/hac/mergedataset/mergedataset/HikariCP/1bca94af9ec625f21d1b58ff10efb5be71ab87a6/transformed/left/HikariCP-1.3.4-SNAPSHOT-jar-with-dependencies.jar",
+      "right": "/home/CIN/hac/mergedataset/mergedataset/HikariCP/1bca94af9ec625f21d1b58ff10efb5be71ab87a6/transformed/right/HikariCP-1.3.4-SNAPSHOT-jar-with-dependencies.jar",
+      "merge": "/home/CIN/hac/mergedataset/mergedataset/HikariCP/1bca94af9ec625f21d1b58ff10efb5be71ab87a6/transformed/merge/HikariCP-1.3.4-SNAPSHOT-jar-with-dependencies.jar"
+    
+    },
+    "jarType": "transformed"
+  }]

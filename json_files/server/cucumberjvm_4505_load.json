@@ -1,0 +1,60 @@
+[
+    {
+        "projectName": "cucumber-jvm",
+        "runAnalysis": true,
+        "scenarioCommits": {
+          "base": "1eb7936c19790c191e5087883f94ef77dd01f6f2",
+          "left": "4f458e79c",
+          "right": "62ed91808",
+          "merge": "4505c156b6267c1b760deec570ddbfe047b42aa9"
+        },
+        "scenarioJavaFiles":{
+          "base": "/home/CIN/hac/mergedataset/mergedataset/cucumber-jvm/4505c156b6267c1b760deec570ddbfe047b42aa9/source/cuke4duke/internal/java/JavaLanguage/base.java",
+          "left": "/home/CIN/hac/mergedataset/mergedataset/cucumber-jvm/4505c156b6267c1b760deec570ddbfe047b42aa9/source/cuke4duke/internal/java/JavaLanguage/left.java",
+          "right": "/home/CIN/hac/mergedataset/mergedataset/cucumber-jvm/4505c156b6267c1b760deec570ddbfe047b42aa9/source/cuke4duke/internal/java/JavaLanguage/right.java",
+          "merge": "/home/CIN/hac/mergedataset/mergedataset/cucumber-jvm/4505c156b6267c1b760deec570ddbfe047b42aa9/source/cuke4duke/internal/java/JavaLanguage/merge.java"
+        },
+        "targets": {
+          "cuke4duke.internal.java.JavaLanguage":[
+            "load(java.lang.String)"
+          ]
+        },
+        "scenarioJars": {
+          "base": "/home/CIN/hac/mergedataset/mergedataset/cucumber-jvm/4505c156b6267c1b760deec570ddbfe047b42aa9/original/base/cuke4duke-0.1.2-jar-with-dependencies.jar:/home/CIN/hac/mergedataset/mergedataset/cucumber-jvm/4505c156b6267c1b760deec570ddbfe047b42aa9/original/base/cuke4duke-maven-plugin-0.1.2-jar-with-dependencies.jar:/home/CIN/hac/mergedataset/mergedataset/cucumber-jvm/4505c156b6267c1b760deec570ddbfe047b42aa9/original/base/parent-0.1.2-jar-with-dependencies.jar",
+          "left": "/home/CIN/hac/mergedataset/mergedataset/cucumber-jvm/4505c156b6267c1b760deec570ddbfe047b42aa9/original/left/cuke4duke-0.1.2-jar-with-dependencies.jar:/home/CIN/hac/mergedataset/mergedataset/cucumber-jvm/4505c156b6267c1b760deec570ddbfe047b42aa9/original/left/cuke4duke-maven-plugin-0.1.2-jar-with-dependencies.jar:/home/CIN/hac/mergedataset/mergedataset/cucumber-jvm/4505c156b6267c1b760deec570ddbfe047b42aa9/original/left/parent-0.1.2-jar-with-dependencies.jar",
+          "right": "/home/CIN/hac/mergedataset/mergedataset/cucumber-jvm/4505c156b6267c1b760deec570ddbfe047b42aa9/original/right/cuke4duke-0.1.2-jar-with-dependencies.jar:/home/CIN/hac/mergedataset/mergedataset/cucumber-jvm/4505c156b6267c1b760deec570ddbfe047b42aa9/original/right/cuke4duke-maven-plugin-0.1.2-jar-with-dependencies.jar:/home/CIN/hac/mergedataset/mergedataset/cucumber-jvm/4505c156b6267c1b760deec570ddbfe047b42aa9/original/right/parent-0.1.2-jar-with-dependencies.jar",
+          "merge": "/home/CIN/hac/mergedataset/mergedataset/cucumber-jvm/4505c156b6267c1b760deec570ddbfe047b42aa9/original/merge/cuke4duke-0.1.2-jar-with-dependencies.jar:/home/CIN/hac/mergedataset/mergedataset/cucumber-jvm/4505c156b6267c1b760deec570ddbfe047b42aa9/original/merge/cuke4duke-maven-plugin-0.1.2-jar-with-dependencies.jar:/home/CIN/hac/mergedataset/mergedataset/cucumber-jvm/4505c156b6267c1b760deec570ddbfe047b42aa9/original/merge/parent-0.1.2-jar-with-dependencies.jar"
+        
+        },
+        "jarType": "original"
+      },
+      {
+        "projectName": "cucumber-jvm",
+        "runAnalysis": true,
+        "scenarioCommits": {
+          "base": "1eb7936c19790c191e5087883f94ef77dd01f6f2",
+          "left": "4f458e79c",
+          "right": "62ed91808",
+          "merge": "4505c156b6267c1b760deec570ddbfe047b42aa9"
+        },
+        "scenarioJavaFiles":{
+          "base": "/home/CIN/hac/mergedataset/mergedataset/cucumber-jvm/4505c156b6267c1b760deec570ddbfe047b42aa9/source/cuke4duke/internal/java/JavaLanguage/base.java",
+          "left": "/home/CIN/hac/mergedataset/mergedataset/cucumber-jvm/4505c156b6267c1b760deec570ddbfe047b42aa9/source/cuke4duke/internal/java/JavaLanguage/left.java",
+          "right": "/home/CIN/hac/mergedataset/mergedataset/cucumber-jvm/4505c156b6267c1b760deec570ddbfe047b42aa9/source/cuke4duke/internal/java/JavaLanguage/right.java",
+          "merge": "/home/CIN/hac/mergedataset/mergedataset/cucumber-jvm/4505c156b6267c1b760deec570ddbfe047b42aa9/source/cuke4duke/internal/java/JavaLanguage/merge.java"
+        },
+        "targets": {
+          "cuke4duke.internal.java.JavaLanguage":[
+            "load(java.lang.String)"
+          ]
+        },
+        "scenarioJars": {
+          "base": "/home/CIN/hac/mergedataset/mergedataset/cucumber-jvm/4505c156b6267c1b760deec570ddbfe047b42aa9/transformed/base/cuke4duke-0.1.2-jar-with-dependencies.jar:/home/CIN/hac/mergedataset/mergedataset/cucumber-jvm/4505c156b6267c1b760deec570ddbfe047b42aa9/transformed/base/cuke4duke-maven-plugin-0.1.2-jar-with-dependencies.jar:/home/CIN/hac/mergedataset/mergedataset/cucumber-jvm/4505c156b6267c1b760deec570ddbfe047b42aa9/transformed/base/parent-0.1.2-jar-with-dependencies.jar",
+          "left": "/home/CIN/hac/mergedataset/mergedataset/cucumber-jvm/4505c156b6267c1b760deec570ddbfe047b42aa9/transformed/left/cuke4duke-0.1.2-jar-with-dependencies.jar:/home/CIN/hac/mergedataset/mergedataset/cucumber-jvm/4505c156b6267c1b760deec570ddbfe047b42aa9/transformed/left/cuke4duke-maven-plugin-0.1.2-jar-with-dependencies.jar:/home/CIN/hac/mergedataset/mergedataset/cucumber-jvm/4505c156b6267c1b760deec570ddbfe047b42aa9/transformed/left/parent-0.1.2-jar-with-dependencies.jar",
+          "right": "/home/CIN/hac/mergedataset/mergedataset/cucumber-jvm/4505c156b6267c1b760deec570ddbfe047b42aa9/transformed/right/cuke4duke-0.1.2-jar-with-dependencies.jar:/home/CIN/hac/mergedataset/mergedataset/cucumber-jvm/4505c156b6267c1b760deec570ddbfe047b42aa9/transformed/right/cuke4duke-maven-plugin-0.1.2-jar-with-dependencies.jar:/home/CIN/hac/mergedataset/mergedataset/cucumber-jvm/4505c156b6267c1b760deec570ddbfe047b42aa9/transformed/right/parent-0.1.2-jar-with-dependencies.jar",
+          "merge": "/home/CIN/hac/mergedataset/mergedataset/cucumber-jvm/4505c156b6267c1b760deec570ddbfe047b42aa9/transformed/merge/cuke4duke-0.1.2-jar-with-dependencies.jar:/home/CIN/hac/mergedataset/mergedataset/cucumber-jvm/4505c156b6267c1b760deec570ddbfe047b42aa9/transformed/merge/cuke4duke-maven-plugin-0.1.2-jar-with-dependencies.jar:/home/CIN/hac/mergedataset/mergedataset/cucumber-jvm/4505c156b6267c1b760deec570ddbfe047b42aa9/transformed/merge/parent-0.1.2-jar-with-dependencies.jar"
+        
+        },
+        "jarType": "transformed"
+      }
+]

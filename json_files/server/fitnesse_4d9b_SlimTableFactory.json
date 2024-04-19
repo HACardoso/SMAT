@@ -1,0 +1,60 @@
+[
+    {
+        "projectName": "fitnesse",
+        "runAnalysis": true,
+        "scenarioCommits": {
+          "base": "87a4b54f94f7dbe48bdfde0dae874e36d48f43df",
+          "left": "d24741cd3",
+          "right": "6c383370e",
+          "merge": "4d9ba9d221d879507440feb084fa7521b95111ec"
+        },
+        "scenarioJavaFiles":{
+          "base": "/home/CIN/hac/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/source/fitnesse/testsystems/slim/tables/SlimTableFactory/base.java",
+          "left": "/home/CIN/hac/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/source/fitnesse/testsystems/slim/tables/SlimTableFactory/left.java",
+          "right": "/home/CIN/hac/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/source/fitnesse/testsystems/slim/tables/SlimTableFactory/right.java",
+          "merge": "/home/CIN/hac/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/source/fitnesse/testsystems/slim/tables/SlimTableFactory/merge.java"
+        },
+        "targets": {
+          "fitnesse.testsystems.slim.tables.SlimTableFactory":[
+            "SlimTableFactory()"
+          ]
+        },
+        "scenarioJars": {
+          "base": "/home/CIN/hac/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/original/base/fitnesse.jar",
+          "left": "/home/CIN/hac/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/original/left/fitnesse.jar",
+          "right": "/home/CIN/hac/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/original/right/fitnesse.jar",
+          "merge": "/home/CIN/hac/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/original/merge/fitnesse-standalone.jar:/home/CIN/hac/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/original/merge/fitnesse.jar"
+        
+        },
+        "jarType": "original"
+      },
+      {
+        "projectName": "fitnesse",
+        "runAnalysis": true,
+        "scenarioCommits": {
+          "base": "87a4b54f94f7dbe48bdfde0dae874e36d48f43df",
+          "left": "d24741cd3",
+          "right": "6c383370e",
+          "merge": "4d9ba9d221d879507440feb084fa7521b95111ec"
+        },
+        "scenarioJavaFiles":{
+          "base": "/home/CIN/hac/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/source/fitnesse/testsystems/slim/tables/SlimTableFactory/base.java",
+          "left": "/home/CIN/hac/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/source/fitnesse/testsystems/slim/tables/SlimTableFactory/left.java",
+          "right": "/home/CIN/hac/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/source/fitnesse/testsystems/slim/tables/SlimTableFactory/right.java",
+          "merge": "/home/CIN/hac/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/source/fitnesse/testsystems/slim/tables/SlimTableFactory/merge.java"
+        },
+        "targets": {
+          "fitnesse.testsystems.slim.tables.SlimTableFactory":[
+            "SlimTableFactory()"
+          ]
+        },
+        "scenarioJars": {
+          "base": "/home/CIN/hac/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/transformed/base/fitnesse.jar",
+          "left": "/home/CIN/hac/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/transformed/left/fitnesse.jar",
+          "right": "/home/CIN/hac/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/transformed/right/fitnesse.jar",
+          "merge": "/home/CIN/hac/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/transformed/merge/fitnesse-standalone.jar:/home/CIN/hac/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/transformed/merge/fitnesse.jar"
+        
+        },
+        "jarType": "transformed"
+      }
+]

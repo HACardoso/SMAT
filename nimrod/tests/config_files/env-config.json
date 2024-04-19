@@ -4,7 +4,7 @@
 
   "repo_dir": "",
   "projects_folder": "",
-  "input_path": "json_files/test4.json",
+  "input_path": "json_files/test.json",
   "tests_dst": "",
   "path_output_csv": "",
   "logger_level": "DEBUG",

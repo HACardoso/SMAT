@@ -45,17 +45,17 @@ def get_test_suite_generators(config: Dict[str, str]) -> List[TestSuiteGenerator
   return generators
 
 
-def get_output_generators(config: Dict[str, str]) -> List[OutputGenerator]:
+def get_output_generators(config: Dict[str, str], index: int) -> List[OutputGenerator]:
   config_generators = config.get(
       'output_generators', ['behavior_changes', 'semantic_conflicts', 'test_suites'])
   generators: List[OutputGenerator] = list()
   if 'behavior_changes' in config_generators:
-    generators.append(BehaviorChangeOutputGenerator())
+    generators.append(BehaviorChangeOutputGenerator(index))
   if 'semantic_conflicts' in config_generators:
     generators.append(SemanticConflictsOutputGenerator(
-        TestSuitesExecution(TestSuiteExecutor(Java(), Jacoco(Java())))))
+        TestSuitesExecution(TestSuiteExecutor(Java(), Jacoco(Java()))), index))
   if 'test_suites' in config_generators:
-    generators.append(TestSuitesOutputGenerator())
+    generators.append(TestSuitesOutputGenerator(index))
 
   return generators
 
@@ -86,12 +86,11 @@ def main():
       FirstSemanticConflictCriteria(),
       SecondSemanticConflictCriteria()
   ], BehaviorChangeChecker())
-  output_generators = get_output_generators(config)
 
-  smat = SMAT(test_suite_generation, test_suites_execution, dynamic_analysis, output_generators)
   scenarios = parse_scenarios_from_input(config)
-
-  for scenario in scenarios:
+  for index, scenario in enumerate(scenarios):
+    output_generators = get_output_generators(config, index)
+    smat = SMAT(test_suite_generation, test_suites_execution, dynamic_analysis, output_generators)
     if scenario.run_analysis:
       smat.run_tool_for_semmantic_conflict_detection(scenario)
     else:

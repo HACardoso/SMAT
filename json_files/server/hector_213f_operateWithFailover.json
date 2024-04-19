@@ -1,0 +1,60 @@
+[
+    {
+        "projectName": "hector",
+        "runAnalysis": true,
+        "scenarioCommits": {
+          "base": "14319170f6bf183b2533908beb1f1356fe0f26de",
+          "left": "25c2810ab1f656783fa38a4bef994c7511be8ac8",
+          "right": "5cfd9c79bf00de3456479bf9ed5dd1c8436537b9",
+          "merge": "213f7887ea70eabdf0705cf8454de29af89e8c38"
+        },
+        "scenarioJavaFiles":{
+          "base": "/home/CIN/hac/mergedataset/mergedataset/hector/213f7887ea70eabdf0705cf8454de29af89e8c38/source/me/prettyprint/cassandra/connection/HConnectionManager/base.java",
+          "left": "/home/CIN/hac/mergedataset/mergedataset/hector/213f7887ea70eabdf0705cf8454de29af89e8c38/source/me/prettyprint/cassandra/connection/HConnectionManager/left.java",
+          "right": "/home/CIN/hac/mergedataset/mergedataset/hector/213f7887ea70eabdf0705cf8454de29af89e8c38/source/me/prettyprint/cassandra/connection/HConnectionManager/right.java",
+          "merge": "/home/CIN/hac/mergedataset/mergedataset/hector/213f7887ea70eabdf0705cf8454de29af89e8c38/source/me/prettyprint/cassandra/connection/HConnectionManager/merge.java"
+        },
+        "targets": {
+          "me.prettyprint.cassandra.connection.HConnectionManager":[
+            "operateWithFailover(me.prettyprint.cassandra.service.Operation<?>)"
+          ]
+        },
+        "scenarioJars": {
+          "base": "/home/CIN/hac/mergedataset/mergedataset/hector/213f7887ea70eabdf0705cf8454de29af89e8c38/original/base/hector-core-0.8.0-1-SNAPSHOT-jar-with-dependencies.jar",
+          "left": "/home/CIN/hac/mergedataset/mergedataset/hector/213f7887ea70eabdf0705cf8454de29af89e8c38/original/left/hector-core-0.8.0-1-SNAPSHOT-jar-with-dependencies.jar",
+          "right": "/home/CIN/hac/mergedataset/mergedataset/hector/213f7887ea70eabdf0705cf8454de29af89e8c38/original/right/hector-core-0.8.0-1-SNAPSHOT-jar-with-dependencies.jar",
+          "merge": "/home/CIN/hac/mergedataset/mergedataset/hector/213f7887ea70eabdf0705cf8454de29af89e8c38/original/merge/hector-core-0.8.0-1-SNAPSHOT-jar-with-dependencies.jar"
+        
+        },
+        "jarType": "original"
+      },
+      {
+        "projectName": "hector",
+        "runAnalysis": true,
+        "scenarioCommits": {
+          "base": "14319170f6bf183b2533908beb1f1356fe0f26de",
+          "left": "25c2810ab1f656783fa38a4bef994c7511be8ac8",
+          "right": "5cfd9c79bf00de3456479bf9ed5dd1c8436537b9",
+          "merge": "213f7887ea70eabdf0705cf8454de29af89e8c38"
+        },
+        "scenarioJavaFiles":{
+          "base": "/home/CIN/hac/mergedataset/mergedataset/hector/213f7887ea70eabdf0705cf8454de29af89e8c38/source/me/prettyprint/cassandra/connection/HConnectionManager/base.java",
+          "left": "/home/CIN/hac/mergedataset/mergedataset/hector/213f7887ea70eabdf0705cf8454de29af89e8c38/source/me/prettyprint/cassandra/connection/HConnectionManager/left.java",
+          "right": "/home/CIN/hac/mergedataset/mergedataset/hector/213f7887ea70eabdf0705cf8454de29af89e8c38/source/me/prettyprint/cassandra/connection/HConnectionManager/right.java",
+          "merge": "/home/CIN/hac/mergedataset/mergedataset/hector/213f7887ea70eabdf0705cf8454de29af89e8c38/source/me/prettyprint/cassandra/connection/HConnectionManager/merge.java"
+        },
+        "targets": {
+          "me.prettyprint.cassandra.connection.HConnectionManager":[
+            "operateWithFailover(me.prettyprint.cassandra.service.Operation<?>)"
+          ]
+        },
+        "scenarioJars": {
+          "base": "/home/CIN/hac/mergedataset/mergedataset/hector/213f7887ea70eabdf0705cf8454de29af89e8c38/transformed/base/hector-core-0.8.0-1-SNAPSHOT-jar-with-dependencies.jar",
+          "left": "/home/CIN/hac/mergedataset/mergedataset/hector/213f7887ea70eabdf0705cf8454de29af89e8c38/transformed/left/hector-core-0.8.0-1-SNAPSHOT-jar-with-dependencies.jar",
+          "right": "/home/CIN/hac/mergedataset/mergedataset/hector/213f7887ea70eabdf0705cf8454de29af89e8c38/transformed/right/hector-core-0.8.0-1-SNAPSHOT-jar-with-dependencies.jar",
+          "merge": "/home/CIN/hac/mergedataset/mergedataset/hector/213f7887ea70eabdf0705cf8454de29af89e8c38/transformed/merge/hector-core-0.8.0-1-SNAPSHOT-jar-with-dependencies.jar"
+        
+        },
+        "jarType": "transformed"
+      }
+]

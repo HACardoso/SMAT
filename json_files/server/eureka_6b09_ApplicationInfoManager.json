@@ -1,0 +1,60 @@
+[
+    {
+        "projectName": "eureka",
+        "runAnalysis": true,
+        "scenarioCommits": {
+          "base": "20a425e53987ff6bfe231ed2149afdc9fa4c9da6",
+          "left": "578f4c0417",
+          "right": "0a539722f4",
+          "merge": "6b09030e95e118a784ca7ec616398a4f0e384bcd"
+        },
+        "scenarioJavaFiles":{
+          "base": "/home/CIN/hac/mergedataset/mergedataset/eureka/6b09030e95e118a784ca7ec616398a4f0e384bcd/source/com/netflix/appinfo/ApplicationInfoManager/base.java",
+          "left": "/home/CIN/hac/mergedataset/mergedataset/eureka/6b09030e95e118a784ca7ec616398a4f0e384bcd/source/com/netflix/appinfo/ApplicationInfoManager/left.java",
+          "right": "/home/CIN/hac/mergedataset/mergedataset/eureka/6b09030e95e118a784ca7ec616398a4f0e384bcd/source/com/netflix/appinfo/ApplicationInfoManager/rigth.java",
+          "merge": "/home/CIN/hac/mergedataset/mergedataset/eureka/6b09030e95e118a784ca7ec616398a4f0e384bcd/source/com/netflix/appinfo/ApplicationInfoManager/merge.java"
+        },
+        "targets": {
+          "com.netflix.appinfo.ApplicationInfoManager":[
+            "ApplicationInfoManager()"
+          ]
+        },
+        "scenarioJars": {
+          "base": "/home/CIN/hac/mergedataset/mergedataset/eureka/6b09030e95e118a784ca7ec616398a4f0e384bcd/original/base/eureka-client-all-1.1.155-SNAPSHOT.jar",
+          "left": "/home/CIN/hac/mergedataset/mergedataset/eureka/6b09030e95e118a784ca7ec616398a4f0e384bcd/original/left/eureka-client-all-1.1.157-SNAPSHOT.jar",
+          "right": "/home/CIN/hac/mergedataset/mergedataset/eureka/6b09030e95e118a784ca7ec616398a4f0e384bcd/original/right/eureka-client-all-1.1.155-SNAPSHOT.jar",
+          "merge": "/home/CIN/hac/mergedataset/mergedataset/eureka/6b09030e95e118a784ca7ec616398a4f0e384bcd/original/merge/eureka-client-all-1.1.157-SNAPSHOT.jar"
+        
+        },
+        "jarType": "original"
+      },
+      {
+        "projectName": "eureka",
+        "runAnalysis": true,
+        "scenarioCommits": {
+          "base": "20a425e53987ff6bfe231ed2149afdc9fa4c9da6",
+          "left": "578f4c0417",
+          "right": "0a539722f4",
+          "merge": "6b09030e95e118a784ca7ec616398a4f0e384bcd"
+        },
+        "scenarioJavaFiles":{
+          "base": "/home/CIN/hac/mergedataset/mergedataset/eureka/6b09030e95e118a784ca7ec616398a4f0e384bcd/source/com/netflix/appinfo/ApplicationInfoManager/base.java",
+          "left": "/home/CIN/hac/mergedataset/mergedataset/eureka/6b09030e95e118a784ca7ec616398a4f0e384bcd/source/com/netflix/appinfo/ApplicationInfoManager/left.java",
+          "right": "/home/CIN/hac/mergedataset/mergedataset/eureka/6b09030e95e118a784ca7ec616398a4f0e384bcd/source/com/netflix/appinfo/ApplicationInfoManager/rigth.java",
+          "merge": "/home/CIN/hac/mergedataset/mergedataset/eureka/6b09030e95e118a784ca7ec616398a4f0e384bcd/source/com/netflix/appinfo/ApplicationInfoManager/merge.java"
+        },
+        "targets": {
+          "com.netflix.appinfo.ApplicationInfoManager":[
+            "ApplicationInfoManager()"
+          ]
+        },
+        "scenarioJars": {
+          "base": "/home/CIN/hac/mergedataset/mergedataset/eureka/6b09030e95e118a784ca7ec616398a4f0e384bcd/transformed/base/eureka-client-all-1.1.155-SNAPSHOT.jar",
+          "left": "/home/CIN/hac/mergedataset/mergedataset/eureka/6b09030e95e118a784ca7ec616398a4f0e384bcd/transformed/left/eureka-client-all-1.1.157-SNAPSHOT.jar",
+          "right": "/home/CIN/hac/mergedataset/mergedataset/eureka/6b09030e95e118a784ca7ec616398a4f0e384bcd/transformed/right/eureka-client-all-1.1.155-SNAPSHOT.jar",
+          "merge": "/home/CIN/hac/mergedataset/mergedataset/eureka/6b09030e95e118a784ca7ec616398a4f0e384bcd/transformed/merge/eureka-client-all-1.1.157-SNAPSHOT.jar"
+        
+        },
+        "jarType": "transformed"
+      }
+]

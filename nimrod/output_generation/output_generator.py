@@ -22,18 +22,22 @@ class OutputGenerator(ABC, Generic[T]):
         test_suites = 'single'
     project_file = open(env_config_json['input_path'])
     project_json = json.load(project_file)
-    project_name = project_json[0]['projectName']
+
+    index = 0
+    project_count = len(project_json)
+
+    project_name = project_json[index]['projectName']
     #merge_commit = project_json[0]['scenarioCommits']['merge'][:4]
     #target = list(project_json[0]['targets'].values())[0][0]
     #target_method = re.findall(r'\.[a-zA-Z]+\(', target)[0][1:-1]
-
     #env_config_file.close()
     #project_file.close()
 
     REPORTS_DIRECTORY = path.join(get_base_output_path(), "reports_" + project_name + '_' + test_suites)
 
-    def __init__(self, report_name: str) -> None:
+    def __init__(self, report_name: str, index: int) -> None:
         super().__init__()
+        self.define_reports_directory_name(index)
         makedirs(self.REPORTS_DIRECTORY, exist_ok=True)
         self._report_name = report_name + ".json"
 
@@ -52,3 +56,11 @@ class OutputGenerator(ABC, Generic[T]):
         with open(file_path, "w") as write:
             json.dump(data, write)
         logging.info(f"Finished generation of {self._report_name} report")
+
+    def define_reports_directory_name(self, index: int):
+        self.project_name = self.project_json[index]['projectName']
+        project = self.project_json[index]
+
+        for key in project['targets']:
+            method_name = project['targets'][key]
+        self.REPORTS_DIRECTORY = path.join(get_base_output_path(), "reports_" + self.project_name + '_' + project['scenarioCommits']['merge'][:4] + '_' + method_name[0] + '_' + self.test_suites + '_' + project['jarType'])

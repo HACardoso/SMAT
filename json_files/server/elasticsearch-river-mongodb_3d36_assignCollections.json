@@ -1,0 +1,60 @@
+[
+    {
+        "projectName": "elasticsearch-river-mongodb",
+        "runAnalysis": true,
+        "scenarioCommits": {
+          "base": "3d4f99516ba3177f7d88a1f600923138a8b77cc8",
+          "left": "02dc4e1",
+          "right": "cbcc295",
+          "merge": "3d3667e5f36ef35f02c49853551499e7e2ab5e19"
+        },
+        "scenarioJavaFiles":{
+          "base": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch-river-mongodb/3d4f99516ba3177f7d88a1f600923138a8b77cc8/source/org/elasticsearch/river/mongodb/Slurper/base.java",
+          "left": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch-river-mongodb/3d4f99516ba3177f7d88a1f600923138a8b77cc8/source/org/elasticsearch/river/mongodb/Slurper/left.java",
+          "right": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch-river-mongodb/3d4f99516ba3177f7d88a1f600923138a8b77cc8/source/org/elasticsearch/river/mongodb/Slurper/right.java",
+          "merge": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch-river-mongodb/3d4f99516ba3177f7d88a1f600923138a8b77cc8/source/org/elasticsearch/river/mongodb/Slurper/merge.java"
+        },
+        "targets": {
+          "org.elasticsearch.river.mongodb.Slurper":[
+            "assignCollections()"
+          ]
+        },
+        "scenarioJars": {
+          "base": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch-river-mongodb/3d4f99516ba3177f7d88a1f600923138a8b77cc8/original/base/elasticsearch-river-mongodb-2.0.2-SNAPSHOT-jar-with-dependencies.jar",
+          "left": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch-river-mongodb/3d4f99516ba3177f7d88a1f600923138a8b77cc8/original/left/elasticsearch-river-mongodb-2.0.2-SNAPSHOT-jar-with-dependencies.jar",
+          "right": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch-river-mongodb/3d4f99516ba3177f7d88a1f600923138a8b77cc8/original/right/elasticsearch-river-mongodb-2.0.2-SNAPSHOT-jar-with-dependencies.jar",
+          "merge": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch-river-mongodb/3d4f99516ba3177f7d88a1f600923138a8b77cc8/original/merge/elasticsearch-river-mongodb-2.0.2-SNAPSHOT-jar-with-dependencies.jar"
+        
+        },
+        "jarType": "original"
+      },
+      {
+        "projectName": "elasticsearch-river-mongodb",
+        "runAnalysis": true,
+        "scenarioCommits": {
+          "base": "3d4f99516ba3177f7d88a1f600923138a8b77cc8",
+          "left": "02dc4e1",
+          "right": "cbcc295",
+          "merge": "3d3667e5f36ef35f02c49853551499e7e2ab5e19"
+        },
+        "scenarioJavaFiles":{
+          "base": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch-river-mongodb/3d4f99516ba3177f7d88a1f600923138a8b77cc8/source/org/elasticsearch/river/mongodb/Slurper/base.java",
+          "left": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch-river-mongodb/3d4f99516ba3177f7d88a1f600923138a8b77cc8/source/org/elasticsearch/river/mongodb/Slurper/left.java",
+          "right": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch-river-mongodb/3d4f99516ba3177f7d88a1f600923138a8b77cc8/source/org/elasticsearch/river/mongodb/Slurper/right.java",
+          "merge": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch-river-mongodb/3d4f99516ba3177f7d88a1f600923138a8b77cc8/source/org/elasticsearch/river/mongodb/Slurper/merge.java"
+        },
+        "targets": {
+          "org.elasticsearch.river.mongodb.Slurper":[
+            "assignCollections()"
+          ]
+        },
+        "scenarioJars": {
+          "base": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch-river-mongodb/3d4f99516ba3177f7d88a1f600923138a8b77cc8/transformed/base/elasticsearch-river-mongodb-2.0.2-SNAPSHOT-jar-with-dependencies.jar",
+          "left": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch-river-mongodb/3d4f99516ba3177f7d88a1f600923138a8b77cc8/transformed/left/elasticsearch-river-mongodb-2.0.2-SNAPSHOT-jar-with-dependencies.jar",
+          "right": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch-river-mongodb/3d4f99516ba3177f7d88a1f600923138a8b77cc8/transformed/right/elasticsearch-river-mongodb-2.0.2-SNAPSHOT-jar-with-dependencies.jar",
+          "merge": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch-river-mongodb/3d4f99516ba3177f7d88a1f600923138a8b77cc8/transformed/merge/elasticsearch-river-mongodb-2.0.2-SNAPSHOT-jar-with-dependencies.jar"
+        
+        },
+        "jarType": "transformed"
+      }
+]

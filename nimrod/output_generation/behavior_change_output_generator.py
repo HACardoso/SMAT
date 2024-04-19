@@ -12,8 +12,8 @@ class BehaviorChangeOutput(TypedDict):
 
 
 class BehaviorChangeOutputGenerator(OutputGenerator[List[BehaviorChangeOutput]]):
-    def __init__(self) -> None:
-        super().__init__("behavior_changes")
+    def __init__(self, index: int) -> None:
+        super().__init__("behavior_changes", index)
 
     def _generate_report_data(self, context: OutputGeneratorContext) -> List[BehaviorChangeOutput]:
         report_data: List[BehaviorChangeOutput] = list()

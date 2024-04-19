@@ -14,8 +14,8 @@ class TestSuitesOutput(TypedDict):
 
 
 class TestSuitesOutputGenerator(OutputGenerator[List[TestSuitesOutput]]):
-    def __init__(self) -> None:
-        super().__init__("test_suites")
+    def __init__(self, index:int) -> None:
+        super().__init__("test_suites", index)
 
     def _generate_report_data(self, context: OutputGeneratorContext) -> List[TestSuitesOutput]:
         report_data: List[TestSuitesOutput] = list()

@@ -1,0 +1,60 @@
+[
+    {
+        "projectName": "elasticsearch",
+        "runAnalysis": true,
+        "scenarioCommits": {
+          "base": "24ffcc28ac67dbd9ca6e27642121af17f7aaced7",
+          "left": "6046ecbab32",
+          "right": "11db3170cd3",
+          "merge": "36884807b3cc9d660db4da062275c7fdbec8ba67"
+        },
+        "scenarioJavaFiles":{
+          "base": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/36884807b3cc9d660db4da062275c7fdbec8ba67/source/org/elasticsearch/index/query/SimpleIndexQueryParserTests/base.java",
+          "left": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/36884807b3cc9d660db4da062275c7fdbec8ba67/source/org/elasticsearch/index/query/SimpleIndexQueryParserTests/left.java",
+          "right": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/36884807b3cc9d660db4da062275c7fdbec8ba67/source/org/elasticsearch/index/query/SimpleIndexQueryParserTests/right.java",
+          "merge": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/36884807b3cc9d660db4da062275c7fdbec8ba67/source/org/elasticsearch/index/query/SimpleIndexQueryParserTests/merge.java"
+        },
+        "targets": {
+          "org.elasticsearch.index.query.SimpleIndexQueryParserTests":[
+            "setup()"
+          ]
+        },
+        "scenarioJars": {
+          "base": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/36884807b3cc9d660db4da062275c7fdbec8ba67/original/base/elasticsearch-2.0.0-SNAPSHOT-jar-with-dependencies.jar",
+          "left": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/36884807b3cc9d660db4da062275c7fdbec8ba67/original/left/elasticsearch-2.0.0-SNAPSHOT-jar-with-dependencies.jar",
+          "right": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/36884807b3cc9d660db4da062275c7fdbec8ba67/original/right/elasticsearch-2.0.0-SNAPSHOT-jar-with-dependencies.jar",
+          "merge": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/36884807b3cc9d660db4da062275c7fdbec8ba67/original/merge/elasticsearch-2.0.0-SNAPSHOT-jar-with-dependencies.jar:/home/CIN/hac/mergedataset/mergedataset/elasticsearch/36884807b3cc9d660db4da062275c7fdbec8ba67/original/merge/elasticsearch-2.1.0-jar-with-dependencies.jar"
+        
+        },
+        "jarType": "original"
+      },
+      {
+        "projectName": "elasticsearch",
+        "runAnalysis": true,
+        "scenarioCommits": {
+          "base": "24ffcc28ac67dbd9ca6e27642121af17f7aaced7",
+          "left": "6046ecbab32",
+          "right": "11db3170cd3",
+          "merge": "36884807b3cc9d660db4da062275c7fdbec8ba67"
+        },
+        "scenarioJavaFiles":{
+          "base": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/36884807b3cc9d660db4da062275c7fdbec8ba67/source/org/elasticsearch/index/query/SimpleIndexQueryParserTests/base.java",
+          "left": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/36884807b3cc9d660db4da062275c7fdbec8ba67/source/org/elasticsearch/index/query/SimpleIndexQueryParserTests/left.java",
+          "right": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/36884807b3cc9d660db4da062275c7fdbec8ba67/source/org/elasticsearch/index/query/SimpleIndexQueryParserTests/right.java",
+          "merge": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/36884807b3cc9d660db4da062275c7fdbec8ba67/source/org/elasticsearch/index/query/SimpleIndexQueryParserTests/merge.java"
+        },
+        "targets": {
+          "org.elasticsearch.index.query.SimpleIndexQueryParserTests":[
+            "setup()"
+          ]
+        },
+        "scenarioJars": {
+          "base": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/36884807b3cc9d660db4da062275c7fdbec8ba67/transformed/base/elasticsearch-2.0.0-SNAPSHOT-jar-with-dependencies.jar",
+          "left": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/36884807b3cc9d660db4da062275c7fdbec8ba67/transformed/left/elasticsearch-2.0.0-SNAPSHOT-jar-with-dependencies.jar",
+          "right": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/36884807b3cc9d660db4da062275c7fdbec8ba67/transformed/right/elasticsearch-2.0.0-SNAPSHOT-jar-with-dependencies.jar",
+          "merge": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/36884807b3cc9d660db4da062275c7fdbec8ba67/transformed/merge/elasticsearch-2.0.0-SNAPSHOT-jar-with-dependencies.jar:/home/CIN/hac/mergedataset/mergedataset/elasticsearch/36884807b3cc9d660db4da062275c7fdbec8ba67/transformed/merge/elasticsearch-2.1.0-jar-with-dependencies.jar"
+        
+        },
+        "jarType": "transformed"
+      }
+]

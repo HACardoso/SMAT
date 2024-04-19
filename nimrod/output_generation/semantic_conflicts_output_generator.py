@@ -17,8 +17,8 @@ class SemanticConflictsOutput(TypedDict):
 
 
 class SemanticConflictsOutputGenerator(OutputGenerator[List[SemanticConflictsOutput]]):
-    def __init__(self, test_suites_execution: TestSuitesExecution) -> None:
-        super().__init__("semantic_conflicts")
+    def __init__(self, test_suites_execution: TestSuitesExecution, index: int) -> None:
+        super().__init__("semantic_conflicts", index)
         self._test_suites_execution = test_suites_execution
 
     def _generate_report_data(self, context: OutputGeneratorContext) -> List[SemanticConflictsOutput]:
