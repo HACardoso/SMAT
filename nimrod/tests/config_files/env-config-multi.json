@@ -1,0 +1,14 @@
+{
+  "java_home": "",
+  "maven_home": "",
+
+  "repo_dir": "",
+  "projects_folder": "",
+  "input_path": "json_files/test.json",
+  "tests_dst": "",
+  "path_output_csv": "",
+  "logger_level": "DEBUG",
+
+  "test_suite_generators":["evosuite-portugal", "evosuite-differential", "evosuite", "randoop", "randoop-modified", "project"],
+  "test_suite_generation_search_time_available":"300"
+}
