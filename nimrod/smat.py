@@ -37,10 +37,10 @@ class SMAT:
 
 
       suites_1 = self._test_suite_generation.generate_test_suites(scenario, scenario.scenario_jars.left, use_determinism, 1)
-      #suites_2 = self._test_suite_generation.generate_test_suites(scenario, scenario.scenario_jars.right, use_determinism, 2)
-      #suites_3 = self._test_suite_generation.generate_test_suites(scenario, scenario.scenario_jars.right, use_determinism, 3)
-      #suites_4 = self._test_suite_generation.generate_test_suites(scenario, scenario.scenario_jars.right, use_determinism, 4)
-      #suites_5 = self._test_suite_generation.generate_test_suites(scenario, scenario.scenario_jars.right, use_determinism, 5)
+      suites_2 = self._test_suite_generation.generate_test_suites(scenario, scenario.scenario_jars.right, use_determinism, 2)
+      suites_3 = self._test_suite_generation.generate_test_suites(scenario, scenario.scenario_jars.right, use_determinism, 3)
+      suites_4 = self._test_suite_generation.generate_test_suites(scenario, scenario.scenario_jars.right, use_determinism, 4)
+      suites_5 = self._test_suite_generation.generate_test_suites(scenario, scenario.scenario_jars.right, use_determinism, 5)
       #suites_6 = self._test_suite_generation.generate_test_suites(scenario, scenario.scenario_jars.right, use_determinism, 6)
       #suites_7 = self._test_suite_generation.generate_test_suites(scenario, scenario.scenario_jars.right, use_determinism, 7)
       #suites_8 = self._test_suite_generation.generate_test_suites(scenario, scenario.scenario_jars.right, use_determinism, 8)
@@ -68,4 +68,4 @@ class SMAT:
       #suites_30 = self._test_suite_generation.generate_test_suites(scenario, scenario.scenario_jars.right, use_determinism, 30)
       
 
-      return suites_1
+      return suites_1 + suites_2 + suites_3 + suites_4 + suites_5
