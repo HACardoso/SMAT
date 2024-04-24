@@ -1356,10 +1356,10 @@
       ]
     },
     "scenarioJars": {
-      "base": "/home/CIN/hac/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/original/base/fitnesse.jar",
-      "left": "/home/CIN/hac/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/original/left/fitnesse.jar",
-      "right": "/home/CIN/hac/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/original/right/fitnesse.jar",
-      "merge": "/home/CIN/hac/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/original/merge/fitnesse-standalone.jar:/home/CIN/hac/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/original/merge/fitnesse.jar"
+      "base": "/home/CIN/hac/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/original/base/fitnesse-standalone.jar",
+      "left": "/home/CIN/hac/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/original/left/fitnesse-standalone.jar",
+      "right": "/home/CIN/hac/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/original/right/fitnesse-standalone.jar",
+      "merge": "/home/CIN/hac/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/original/merge/fitnesse-standalone.jar"
     
     },
     "jarType": "original"
@@ -1385,10 +1385,10 @@
       ]
     },
     "scenarioJars": {
-      "base": "/home/CIN/hac/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/transformed/base/fitnesse.jar",
-      "left": "/home/CIN/hac/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/transformed/left/fitnesse.jar",
-      "right": "/home/CIN/hac/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/transformed/right/fitnesse.jar",
-      "merge": "/home/CIN/hac/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/transformed/merge/fitnesse-standalone.jar:/home/CIN/hac/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/transformed/merge/fitnesse.jar"
+      "base": "/home/CIN/hac/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/transformed/base/fitnesse-standalone.jar",
+      "left": "/home/CIN/hac/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/transformed/left/fitnesse-standalone.jar",
+      "right": "/home/CIN/hac/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/transformed/right/fitnesse-standalone.jar",
+      "merge": "/home/CIN/hac/mergedataset/mergedataset/fitnesse/4d9ba9d221d879507440feb084fa7521b95111ec/transformed/merge/fitnesse-standalone.jar"
     
     },
     "jarType": "transformed"
