@@ -602,10 +602,10 @@
       ]
     },
     "scenarioJars": {
-      "base": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/36884807b3cc9d660db4da062275c7fdbec8ba67/original/base/elasticsearch-2.0.0-SNAPSHOT-jar-with-dependencies.jar",
-      "left": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/36884807b3cc9d660db4da062275c7fdbec8ba67/original/left/elasticsearch-2.0.0-SNAPSHOT-jar-with-dependencies.jar",
-      "right": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/36884807b3cc9d660db4da062275c7fdbec8ba67/original/right/elasticsearch-2.0.0-SNAPSHOT-jar-with-dependencies.jar",
-      "merge": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/36884807b3cc9d660db4da062275c7fdbec8ba67/original/merge/elasticsearch-2.0.0-SNAPSHOT-jar-with-dependencies.jar:/home/CIN/hac/mergedataset/mergedataset/elasticsearch/36884807b3cc9d660db4da062275c7fdbec8ba67/original/merge/elasticsearch-2.1.0-jar-with-dependencies.jar"
+      "base": "/Users/hugoalvescardoso/Desktop/mergedataset/mergedataset/elasticsearch/36884807b3cc9d660db4da062275c7fdbec8ba67/original/base/elasticsearch-2.0.0-SNAPSHOT-fat-tests.jar",
+      "left": "/Users/hugoalvescardoso/Desktop/mergedataset/mergedataset/elasticsearch/36884807b3cc9d660db4da062275c7fdbec8ba67/original/left/elasticsearch-2.0.0-SNAPSHOT-fat-tests.jar",
+      "right": "/Users/hugoalvescardoso/Desktop/mergedataset/mergedataset/elasticsearch/36884807b3cc9d660db4da062275c7fdbec8ba67/original/right/elasticsearch-2.0.0-SNAPSHOT-fat-tests.jar",
+      "merge": "/Users/hugoalvescardoso/Desktop/mergedataset/mergedataset/elasticsearch/36884807b3cc9d660db4da062275c7fdbec8ba67/original/merge/elasticsearch-2.0.0-SNAPSHOT-fat-tests.jar"
     
     },
     "jarType": "original"
@@ -631,10 +631,10 @@
       ]
     },
     "scenarioJars": {
-      "base": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/36884807b3cc9d660db4da062275c7fdbec8ba67/transformed/base/elasticsearch-2.0.0-SNAPSHOT-jar-with-dependencies.jar",
-      "left": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/36884807b3cc9d660db4da062275c7fdbec8ba67/transformed/left/elasticsearch-2.0.0-SNAPSHOT-jar-with-dependencies.jar",
-      "right": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/36884807b3cc9d660db4da062275c7fdbec8ba67/transformed/right/elasticsearch-2.0.0-SNAPSHOT-jar-with-dependencies.jar",
-      "merge": "/home/CIN/hac/mergedataset/mergedataset/elasticsearch/36884807b3cc9d660db4da062275c7fdbec8ba67/transformed/merge/elasticsearch-2.0.0-SNAPSHOT-jar-with-dependencies.jar:/home/CIN/hac/mergedataset/mergedataset/elasticsearch/36884807b3cc9d660db4da062275c7fdbec8ba67/transformed/merge/elasticsearch-2.1.0-jar-with-dependencies.jar"
+      "base": "/Users/hugoalvescardoso/Desktop/mergedataset/mergedataset/elasticsearch/36884807b3cc9d660db4da062275c7fdbec8ba67/transformed/base/elasticsearch-2.0.0-SNAPSHOT-fat-tests.jar",
+      "left": "/Users/hugoalvescardoso/Desktop/mergedataset/mergedataset/elasticsearch/36884807b3cc9d660db4da062275c7fdbec8ba67/transformed/left/elasticsearch-2.0.0-SNAPSHOT-fat-tests.jar",
+      "right": "/Users/hugoalvescardoso/Desktop/mergedataset/mergedataset/elasticsearch/36884807b3cc9d660db4da062275c7fdbec8ba67/transformed/right/elasticsearch-2.0.0-SNAPSHOT-fat-tests.jar",
+      "merge": "/Users/hugoalvescardoso/Desktop/mergedataset/mergedataset/elasticsearch/36884807b3cc9d660db4da062275c7fdbec8ba67/transformed/merge/elasticsearch-2.0.0-SNAPSHOT-fat-tests.jar"
     
     },
     "jarType": "transformed"
