@@ -2759,6 +2759,35 @@
     "projectName": "spring-boot",
     "runAnalysis": true,
     "scenarioCommits": {
+      "base": "d0a85dd4779285689dd70ae567c6053c563c2ad5",
+      "left": "a9c2eb3919a0ae8c46193c4e96e4cf04554cd8ff",
+      "right": "adc8cdf16a875b3cf750960b86aa11cdf7631188",
+      "merge": "2d4e68a9777601bfb8309c94d8b74bc21be80ad1"
+    },
+    "scenarioJavaFiles":{
+      "base": "",
+      "left": "",
+      "right": "",
+      "merge": ""
+    },
+    "targets": {
+      "org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory":[
+        "customizeConnector(org.apache.catalina.connector.Connector)"
+      ]
+    },
+    "scenarioJars": {
+      "base": "/home/CIN/hac/mergedataset/mergedataset/spring-boot/2d4e68a9777601bfb8309c94d8b74bc21be80ad1/transformed/base/spring-boot-1.1.6.BUILD-SNAPSHOT-jar-with-dependencies.jar",
+      "left": "/home/CIN/hac/mergedataset/mergedataset/spring-boot/2d4e68a9777601bfb8309c94d8b74bc21be80ad1/transformed/left/spring-boot-1.2.0.BUILD-SNAPSHOT-jar-with-dependencies.jar",
+      "right": "/home/CIN/hac/mergedataset/mergedataset/spring-boot/2d4e68a9777601bfb8309c94d8b74bc21be80ad1/transformed/right/spring-boot-1.1.6.BUILD-SNAPSHOT-jar-with-dependencies.jar",
+      "merge": "/home/CIN/hac/mergedataset/mergedataset/spring-boot/2d4e68a9777601bfb8309c94d8b74bc21be80ad1/transformed/merge/spring-boot-1.2.0.BUILD-SNAPSHOT-jar-with-dependencies.jar"
+    
+    },
+    "jarType": "transformed"
+  },
+  {
+    "projectName": "spring-boot",
+    "runAnalysis": true,
+    "scenarioCommits": {
       "base": "13403a0f723fdf0680b1bff2897c4b47df53397d",
       "left": "33b1f52fa5cc14f0a9d4a3ef7424b2ca42217de5",
       "right": "779537551edfa0c0bc430e0727b1277ec0a8a57e",
@@ -2817,6 +2846,35 @@
     "projectName": "spring-boot",
     "runAnalysis": true,
     "scenarioCommits": {
+      "base": "86d5c1925916043ca69da3e3443baf5b1ae4f8ad",
+      "left": "93700d00de8135ba1c5d2d95d91e69e21f3f8ed9",
+      "right": "11d59df3fd71a656a7869ace4303a8d72e6f777c",
+      "merge": "3444ebbc05b99a164474c14d6a6784f749514428"
+    },
+    "scenarioJavaFiles":{
+      "base": "",
+      "left": "",
+      "right": "",
+      "merge": ""
+    },
+    "targets": {
+      "org.springframework.boot.context.web.SpringBootServletInitializer":[
+        "createRootApplicationContext(javax.servlet.ServletContext)"
+      ]
+    },
+    "scenarioJars": {
+      "base": "/home/CIN/hac/mergedataset/mergedataset/spring-boot/3444ebbc05b99a164474c14d6a6784f749514428/transformed/base/spring-boot-1.2.6.BUILD-SNAPSHOT-jar-with-dependencies.jar",
+      "left": "/home/CIN/hac/mergedataset/mergedataset/spring-boot/3444ebbc05b99a164474c14d6a6784f749514428/transformed/left/spring-boot-1.3.0.BUILD-SNAPSHOT-jar-with-dependencies.jar",
+      "right": "/home/CIN/hac/mergedataset/mergedataset/spring-boot/3444ebbc05b99a164474c14d6a6784f749514428/transformed/right/spring-boot-1.2.6.BUILD-SNAPSHOT-jar-with-dependencies.jar",
+      "merge": "/home/CIN/hac/mergedataset/mergedataset/spring-boot/3444ebbc05b99a164474c14d6a6784f749514428/transformed/merge/spring-boot-1.3.0.BUILD-SNAPSHOT-jar-with-dependencies.jar"
+    
+    },
+    "jarType": "transformed"
+  },
+  {
+    "projectName": "spring-boot",
+    "runAnalysis": true,
+    "scenarioCommits": {
       "base": "b5709fd6183bb283b7294b77a477528e03483d10",
       "left": "337e6452632827804f661e9695de7ecad6dcaeb3",
       "right": "544d516563a0d449f7a8dabe142362ba6d6f4778",
@@ -2841,6 +2899,35 @@
     
     },
     "jarType": "original"
+  },
+  {
+    "projectName": "spring-boot",
+    "runAnalysis": true,
+    "scenarioCommits": {
+      "base": "b5709fd6183bb283b7294b77a477528e03483d10",
+      "left": "337e6452632827804f661e9695de7ecad6dcaeb3",
+      "right": "544d516563a0d449f7a8dabe142362ba6d6f4778",
+      "merge": "6664ce19d6f2388ebd6cf54763f54fdddd226b9a"
+    },
+    "scenarioJavaFiles":{
+      "base": "",
+      "left": "",
+      "right": "",
+      "merge": ""
+    },
+    "targets": {
+      "org.springframework.boot.jta.atomikos.AtomikosProperties":[
+        "asProperties()"
+      ]
+    },
+    "scenarioJars": {
+      "base": "/home/CIN/hac/mergedataset/mergedataset/spring-boot/6664ce19d6f2388ebd6cf54763f54fdddd226b9a/transformed/base/spring-boot-1.5.4.BUILD-SNAPSHOT-jar-with-dependencies.jar",
+      "left": "/home/CIN/hac/mergedataset/mergedataset/spring-boot/6664ce19d6f2388ebd6cf54763f54fdddd226b9a/transformed/left/spring-boot-2.0.0.BUILD-SNAPSHOT-jar-with-dependencies.jar",
+      "right": "/home/CIN/hac/mergedataset/mergedataset/spring-boot/6664ce19d6f2388ebd6cf54763f54fdddd226b9a/transformed/right/spring-boot-1.5.4.BUILD-SNAPSHOT-jar-with-dependencies.jar",
+      "merge": "/home/CIN/hac/mergedataset/mergedataset/spring-boot/6664ce19d6f2388ebd6cf54763f54fdddd226b9a/transformed/merge/spring-boot-2.0.0.BUILD-SNAPSHOT-jar-with-dependencies.jar"
+    
+    },
+    "jarType": "transformed"
   },
   {
     "projectName": "spring-boot",
@@ -2892,10 +2979,10 @@
       ]
     },
     "scenarioJars": {
-      "base": "/home/CIN/hac/mergedataset/mergedataset/spring-boot/af20dc6cc45c032573413c401f9f73aa75371744/original/base/spring-boot-loader-1.3.6.BUILD-SNAPSHOT-jar-with-dependencies.jar",
-      "left": "/home/CIN/hac/mergedataset/mergedataset/spring-boot/af20dc6cc45c032573413c401f9f73aa75371744/original/left/spring-boot-loader-1.4.0.BUILD-SNAPSHOT-jar-with-dependencies.jar",
-      "right": "/home/CIN/hac/mergedataset/mergedataset/spring-boot/af20dc6cc45c032573413c401f9f73aa75371744/original/right/spring-boot-loader-1.3.6.BUILD-SNAPSHOT-jar-with-dependencies.jar",
-      "merge": "/home/CIN/hac/mergedataset/mergedataset/spring-boot/af20dc6cc45c032573413c401f9f73aa75371744/original/merge/spring-boot-loader-1.4.0.BUILD-SNAPSHOT-jar-with-dependencies.jar"
+      "base": "/home/CIN/hac/mergedataset/mergedataset/spring-boot/af20dc6cc45c032573413c401f9f73aa75371744/original/base/spring-boot-loader-1.3.6.BUILD-SNAPSHOT-jar-with-dependencies.jar:/home/CIN/hac/mergedataset/mergedataset/spring-boot/af20dc6cc45c032573413c401f9f73aa75371744/original/base/spring-boot-loader-1.3.6.BUILD-SNAPSHOT-tests.jar",
+      "left": "/home/CIN/hac/mergedataset/mergedataset/spring-boot/af20dc6cc45c032573413c401f9f73aa75371744/original/left/spring-boot-loader-1.4.0.BUILD-SNAPSHOT-jar-with-dependencies.jar:/home/CIN/hac/mergedataset/mergedataset/spring-boot/af20dc6cc45c032573413c401f9f73aa75371744/original/left/spring-boot-loader-1.4.0.BUILD-SNAPSHOT-tests.jar",
+      "right": "/home/CIN/hac/mergedataset/mergedataset/spring-boot/af20dc6cc45c032573413c401f9f73aa75371744/original/right/spring-boot-loader-1.3.6.BUILD-SNAPSHOT-jar-with-dependencies.jar:/home/CIN/hac/mergedataset/mergedataset/spring-boot/af20dc6cc45c032573413c401f9f73aa75371744/original/right/spring-boot-loader-1.3.6.BUILD-SNAPSHOT-tests.jar",
+      "merge": "/home/CIN/hac/mergedataset/mergedataset/spring-boot/af20dc6cc45c032573413c401f9f73aa75371744/original/merge/spring-boot-loader-1.4.0.BUILD-SNAPSHOT-jar-with-dependencies.jar:/home/CIN/hac/mergedataset/mergedataset/spring-boot/af20dc6cc45c032573413c401f9f73aa75371744/original/merge/spring-boot-loader-1.4.0.BUILD-SNAPSHOT-tests.jar"
     
     },
     "jarType": "original"
@@ -2921,68 +3008,10 @@
       ]
     },
     "scenarioJars": {
-      "base": "/home/CIN/hac/mergedataset/mergedataset/spring-boot/af20dc6cc45c032573413c401f9f73aa75371744/transformed/base/spring-boot-loader-1.3.6.BUILD-SNAPSHOT-jar-with-dependencies.jar",
-      "left": "/home/CIN/hac/mergedataset/mergedataset/spring-boot/af20dc6cc45c032573413c401f9f73aa75371744/transformed/left/spring-boot-loader-1.4.0.BUILD-SNAPSHOT-jar-with-dependencies.jar",
-      "right": "/home/CIN/hac/mergedataset/mergedataset/spring-boot/af20dc6cc45c032573413c401f9f73aa75371744/transformed/right/spring-boot-loader-1.3.6.BUILD-SNAPSHOT-jar-with-dependencies.jar",
-      "merge": "/home/CIN/hac/mergedataset/mergedataset/spring-boot/af20dc6cc45c032573413c401f9f73aa75371744/transformed/merge/spring-boot-loader-1.4.0.BUILD-SNAPSHOT-jar-with-dependencies.jar"
-    
-    },
-    "jarType": "transformed"
-  },
-  {
-    "projectName": "spring-boot",
-    "runAnalysis": true,
-    "scenarioCommits": {
-      "base": "c808de0021578b4b9ba0881a33c9ed20db2465a5",
-      "left": "fc78a8de90",
-      "right": "159ef8f189",
-      "merge": "af20dc6cc45c032573413c401f9f73aa75371744"
-    },
-    "scenarioJavaFiles":{
-      "base": "",
-      "left": "",
-      "right": "",
-      "merge": ""
-    },
-    "targets": {
-      "org.springframework.boot.loader.archive.ExplodedArchiveTests":[
-        "getUrl()"
-      ]
-    },
-    "scenarioJars": {
-      "base": "/home/CIN/hac/mergedataset/mergedataset/spring-boot/af20dc6cc45c032573413c401f9f73aa75371744/original/base/spring-boot-loader-1.3.6.BUILD-SNAPSHOT-jar-with-dependencies.jar",
-      "left": "/home/CIN/hac/mergedataset/mergedataset/spring-boot/af20dc6cc45c032573413c401f9f73aa75371744/original/left/spring-boot-loader-1.4.0.BUILD-SNAPSHOT-jar-with-dependencies.jar",
-      "right": "/home/CIN/hac/mergedataset/mergedataset/spring-boot/af20dc6cc45c032573413c401f9f73aa75371744/original/right/spring-boot-loader-1.3.6.BUILD-SNAPSHOT-jar-with-dependencies.jar",
-      "merge": "/home/CIN/hac/mergedataset/mergedataset/spring-boot/af20dc6cc45c032573413c401f9f73aa75371744/original/merge/spring-boot-loader-1.4.0.BUILD-SNAPSHOT-jar-with-dependencies.jar"
-    
-    },
-    "jarType": "original"
-  },
-  {
-    "projectName": "spring-boot",
-    "runAnalysis": true,
-    "scenarioCommits": {
-      "base": "c808de0021578b4b9ba0881a33c9ed20db2465a5",
-      "left": "fc78a8de90",
-      "right": "159ef8f189",
-      "merge": "af20dc6cc45c032573413c401f9f73aa75371744"
-    },
-    "scenarioJavaFiles":{
-      "base": "",
-      "left": "",
-      "right": "",
-      "merge": ""
-    },
-    "targets": {
-      "org.springframework.boot.loader.archive.ExplodedArchiveTests":[
-        "getUrl()"
-      ]
-    },
-    "scenarioJars": {
-      "base": "/home/CIN/hac/mergedataset/mergedataset/spring-boot/af20dc6cc45c032573413c401f9f73aa75371744/transformed/base/spring-boot-loader-1.3.6.BUILD-SNAPSHOT-jar-with-dependencies.jar",
-      "left": "/home/CIN/hac/mergedataset/mergedataset/spring-boot/af20dc6cc45c032573413c401f9f73aa75371744/transformed/left/spring-boot-loader-1.4.0.BUILD-SNAPSHOT-jar-with-dependencies.jar",
-      "right": "/home/CIN/hac/mergedataset/mergedataset/spring-boot/af20dc6cc45c032573413c401f9f73aa75371744/transformed/right/spring-boot-loader-1.3.6.BUILD-SNAPSHOT-jar-with-dependencies.jar",
-      "merge": "/home/CIN/hac/mergedataset/mergedataset/spring-boot/af20dc6cc45c032573413c401f9f73aa75371744/transformed/merge/spring-boot-loader-1.4.0.BUILD-SNAPSHOT-jar-with-dependencies.jar"
+      "base": "/home/CIN/hac/mergedataset/mergedataset/spring-boot/af20dc6cc45c032573413c401f9f73aa75371744/transformed/base/spring-boot-loader-1.3.6.BUILD-SNAPSHOT-jar-with-dependencies.jar:/home/CIN/hac/mergedataset/mergedataset/spring-boot/af20dc6cc45c032573413c401f9f73aa75371744/transformed/base/spring-boot-loader-1.3.6.BUILD-SNAPSHOT-tests.jar",
+      "left": "/home/CIN/hac/mergedataset/mergedataset/spring-boot/af20dc6cc45c032573413c401f9f73aa75371744/transformed/left/spring-boot-loader-1.4.0.BUILD-SNAPSHOT-jar-with-dependencies.jar:/home/CIN/hac/mergedataset/mergedataset/spring-boot/af20dc6cc45c032573413c401f9f73aa75371744/transformed/left/spring-boot-loader-1.4.0.BUILD-SNAPSHOT-tests.jar",
+      "right": "/home/CIN/hac/mergedataset/mergedataset/spring-boot/af20dc6cc45c032573413c401f9f73aa75371744/transformed/right/spring-boot-loader-1.3.6.BUILD-SNAPSHOT-jar-with-dependencies.jar:/home/CIN/hac/mergedataset/mergedataset/spring-boot/af20dc6cc45c032573413c401f9f73aa75371744/transformed/right/spring-boot-loader-1.3.6.BUILD-SNAPSHOT-tests.jar",
+      "merge": "/home/CIN/hac/mergedataset/mergedataset/spring-boot/af20dc6cc45c032573413c401f9f73aa75371744/transformed/merge/spring-boot-loader-1.4.0.BUILD-SNAPSHOT-jar-with-dependencies.jar:/home/CIN/hac/mergedataset/mergedataset/spring-boot/af20dc6cc45c032573413c401f9f73aa75371744/transformed/merge/spring-boot-loader-1.4.0.BUILD-SNAPSHOT-tests.jar"
     
     },
     "jarType": "transformed"
